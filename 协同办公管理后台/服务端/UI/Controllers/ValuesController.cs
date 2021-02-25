@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using Model;
 using RedisBuffer;
 using StackExchange.Redis;
+using Microsoft.Extensions.Logging;
 
 namespace UI.Controllers
 {
@@ -17,8 +18,11 @@ namespace UI.Controllers
     public class ValuesController : ControllerBase
     {
         private UnitOfWork ff = null;//SqlSugar框架的实体类
-        public ValuesController()
+        private readonly ILogger<ValuesController> _logger;
+
+        public ValuesController(ILogger<ValuesController> logger)
         {
+            _logger = logger;
             ff = new UnitOfWork();
         }
         //获取数据
