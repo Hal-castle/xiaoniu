@@ -29,7 +29,7 @@ namespace SqlSugar
                 IsAutoCloseConnection = true,//开启自动释放模式和EF原理一样我就不多解释了
 
             });
-            CreateTable(false, 50, typeof(Student));
+            CreateTable(false, 50, typeof(Student), typeof(Units));
         }
         private void CreateTable(bool Backup = false, int StringDefaultLength = 50, params Type[] types)
         {
@@ -45,7 +45,8 @@ namespace SqlSugar
             }
         }
 
-        public SimpleClient<Student> studentDb { get { return new SimpleClient<Student>(Db); } }
+        public SimpleClient<Student> studentDb { get { return new SimpleClient<Student>(Db); } }//学生表
+        public SimpleClient<Units> UnitsDb { get { return new SimpleClient<Units>(Db); } }//字典表
         //注意：不能写成静态的
         public SqlSugarClient Db;//用来处理事务多表查询和复杂的操作
 

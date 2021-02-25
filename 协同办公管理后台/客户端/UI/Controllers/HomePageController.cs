@@ -41,9 +41,6 @@ namespace 客户端1.Controllers
         {
             return View();
         }
-
-
-
         //应用管理
         //接入应用
         public IActionResult Access_application()
