@@ -8,23 +8,23 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\29462\\.nuget\\packages\\": {},
+    "C:\\Users\\admin\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\29462\\Desktop\\奋进小组项目\\协同办公管理后台\\客户端\\UI\\UI.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\桌面\\协调管理系统\\协同办公管理后台\\客户端\\UI\\UI.csproj",
       "projectName": "UI",
-      "projectPath": "C:\\Users\\29462\\Desktop\\奋进小组项目\\协同办公管理后台\\客户端\\UI\\UI.csproj",
-      "packagesPath": "C:\\Users\\29462\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\29462\\Desktop\\奋进小组项目\\协同办公管理后台\\客户端\\UI\\obj\\",
+      "projectPath": "C:\\Users\\admin\\桌面\\协调管理系统\\协同办公管理后台\\客户端\\UI\\UI.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\admin\\桌面\\协调管理系统\\协同办公管理后台\\客户端\\UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\29462\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
