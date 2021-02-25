@@ -1,0 +1,100 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>
+    <link href="~/layui/css/layui.css" rel="stylesheet" />
+</head>
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header">
+            <div class="layui-logo">协同办公管理后台</div>
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                        Admin
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">基本资料</a></dd>
+                        <dd><a href="">安全设置</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href=""></a></li>
+            </ul>
+        </div>
+
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a class="" href="javascript:;">单位人事</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="/HomePage/Unit_management" target="management">单位管理</a></dd>
+                            <dd><a href="/HomePage/Division_management" target="management">部门管理</a></dd>
+                            <dd><a href="/HomePage/People_management" target="management">人员管理</a></dd>
+                            <dd><a href="/HomePage/Group_management" target="management">群组管理</a></dd>
+                            <dd><a href="/HomePage/Post_management" target="management">岗位管理</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;">应用管理</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="/HomePage/Access_application" target="management">接入应用</a></dd>
+                            <dd><a href="/HomePage/Developer_Management" target="management">开发商管理</a></dd>
+                            <dd><a href="/HomePage/Application_classification" target="management">应用分类</a></dd>
+                            <dd><a href="/HomePage/Operation_log" target="management">操作日志</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;">公众号</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="/HomePage/Account_Management" target="management">公众号管理</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;">流程管理</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="/HomePage/Process_management" target="management">流程管理</a></dd>
+                            <dd><a href="/HomePage/Workorder_management" target="management">工单管理</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;">系统管理</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="/HomePage/Role_management" target="management">角色管理</a></dd>
+                            <dd><a href="/HomePage/Dictionary_management" target="management">字典管理</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="layui-body">
+            <!-- 内容主体区域 -->
+            <!--<div style="padding: 15px;">内容主体区域</div>-->
+            <iframe style="width:100%;height:99.23%" name="management"></iframe>
+        </div>
+
+        <div class="layui-footer">
+            <!-- 底部固定区域 -->
+            layui.com - 底部固定区域
+        </div>
+    </div>
+    <script src="~/layui/layui.js"></script>
+    <script>
+        //JavaScript代码区域
+        layui.use('element', function () {
+            var element = layui.element;
+
+        });
+    </script>
+</body>
+</html>

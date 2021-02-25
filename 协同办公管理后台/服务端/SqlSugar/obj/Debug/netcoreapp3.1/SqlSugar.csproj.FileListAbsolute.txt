@@ -1,0 +1,9 @@
+C:\Users\29462\Desktop\协同办公管理后台\服务端\SqlSugar\bin\Debug\netcoreapp3.1\SqlSugar.deps.json
+C:\Users\29462\Desktop\协同办公管理后台\服务端\SqlSugar\bin\Debug\netcoreapp3.1\SqlSugar.dll
+C:\Users\29462\Desktop\协同办公管理后台\服务端\SqlSugar\bin\Debug\netcoreapp3.1\SqlSugar.pdb
+C:\Users\29462\Desktop\协同办公管理后台\服务端\SqlSugar\obj\Debug\netcoreapp3.1\SqlSugar.csprojAssemblyReference.cache
+C:\Users\29462\Desktop\协同办公管理后台\服务端\SqlSugar\obj\Debug\netcoreapp3.1\SqlSugar.AssemblyInfoInputs.cache
+C:\Users\29462\Desktop\协同办公管理后台\服务端\SqlSugar\obj\Debug\netcoreapp3.1\SqlSugar.AssemblyInfo.cs
+C:\Users\29462\Desktop\协同办公管理后台\服务端\SqlSugar\obj\Debug\netcoreapp3.1\SqlSugar.csproj.CoreCompileInputs.cache
+C:\Users\29462\Desktop\协同办公管理后台\服务端\SqlSugar\obj\Debug\netcoreapp3.1\SqlSugar.dll
+C:\Users\29462\Desktop\协同办公管理后台\服务端\SqlSugar\obj\Debug\netcoreapp3.1\SqlSugar.pdb
