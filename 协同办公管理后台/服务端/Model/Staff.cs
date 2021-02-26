@@ -4,6 +4,11 @@ using System.Text;
 using SqlSugar;
 namespace Model
 {
+<<<<<<< HEAD
+    //用户表
+=======
+    //人员表
+>>>>>>> bd95b77ce3b78e9139fb2dfa5d9f3b1ad0b7b538
     public class Staff
     {
         [SugarColumn(IsPrimaryKey = true, IsIdentity = true)]//主键并且自增 （string不能设置自增）

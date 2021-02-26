@@ -14,6 +14,8 @@ namespace Model
         public string Uname { get; set; }
         ///单位编码
         public string  Ucoding { get; set; }
+        //单位级别
+        public string Unit_level { get; set; }
         ///排序
         public int Usort { get; set; }
         ///状态
@@ -22,5 +24,7 @@ namespace Model
         public DateTime Ubegin { get; set; }
         ///结束时间
         public DateTime Uend { get; set; }
+        //上级单位自连接
+        public int MyProperty { get; set; }
     }
 }

@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "d7IG4dcDQLy3Dx8/UpOgMIrsbqh46KbGexxF/sZGAhHLKu2v1Tem11oX+tBLNhcNOuKsPib3qQFLM/N5XaqStg==",
+<<<<<<< HEAD
+  "dgSpecHash": "KXcyfqZ5PK4XPMKn536fyjtVNLUseLFJfz8AIFvxFjbCIBn3biyGUjOPAtK1G6KjVNkqjvz93vc3nW1wISxpqw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\29462\\Desktop\\奋进小组项目\\协同办公管理后台\\客户端\\UI\\UI.csproj",
+  "projectFilePath": "C:\\Users\\liuwanting\\Desktop\\xiaoniu\\协同办公管理后台\\客户端\\UI\\UI.csproj",
+=======
+  "dgSpecHash": "Ncimw8rmlHeBSsB3TqTIAfHMHdtcAr+7tsgN+zEI6dkrSDWwzMKYJILj9wQV3FGGxtiLN3/+8TRnhqJhLtQF2Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\admin\\桌面\\协调管理系统\\协同办公管理后台\\客户端\\UI\\UI.csproj",
+>>>>>>> bd95b77ce3b78e9139fb2dfa5d9f3b1ad0b7b538
   "expectedPackageFiles": [],
   "logs": []
 }

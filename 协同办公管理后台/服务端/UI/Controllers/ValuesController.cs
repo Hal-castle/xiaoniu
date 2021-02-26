@@ -18,6 +18,7 @@ namespace UI.Controllers
     public class ValuesController : ControllerBase
     {
         private UnitOfWork ff = null;//SqlSugar框架的实体类
+
         private readonly ILogger<ValuesController> _logger;
 
         public ValuesController(ILogger<ValuesController> logger)

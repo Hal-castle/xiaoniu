@@ -50,3 +50,34 @@ C:\Users\admin\桌面\协调管理小项目\xiaoniu\协同办公管理后台\服
 C:\Users\admin\桌面\协调管理小项目\xiaoniu\协同办公管理后台\服务端\RedisBuffer\obj\Debug\netcoreapp3.1\RedisBuffer.csproj.CopyComplete
 C:\Users\admin\桌面\协调管理小项目\xiaoniu\协同办公管理后台\服务端\RedisBuffer\obj\Debug\netcoreapp3.1\RedisBuffer.dll
 C:\Users\admin\桌面\协调管理小项目\xiaoniu\协同办公管理后台\服务端\RedisBuffer\obj\Debug\netcoreapp3.1\RedisBuffer.pdb
+<<<<<<< HEAD
+C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\RedisBuffer\bin\Debug\netcoreapp3.1\RedisBuffer.deps.json
+C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\RedisBuffer\bin\Debug\netcoreapp3.1\RedisBuffer.dll
+C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\RedisBuffer\bin\Debug\netcoreapp3.1\RedisBuffer.pdb
+C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\RedisBuffer\bin\Debug\netcoreapp3.1\Model.dll
+C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\RedisBuffer\bin\Debug\netcoreapp3.1\SqlSugarFrame.dll
+C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\RedisBuffer\bin\Debug\netcoreapp3.1\Model.pdb
+C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\RedisBuffer\bin\Debug\netcoreapp3.1\SqlSugarFrame.pdb
+C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\RedisBuffer\obj\Debug\netcoreapp3.1\RedisBuffer.csprojAssemblyReference.cache
+C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\RedisBuffer\obj\Debug\netcoreapp3.1\RedisBuffer.AssemblyInfoInputs.cache
+C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\RedisBuffer\obj\Debug\netcoreapp3.1\RedisBuffer.AssemblyInfo.cs
+C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\RedisBuffer\obj\Debug\netcoreapp3.1\RedisBuffer.csproj.CoreCompileInputs.cache
+C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\RedisBuffer\obj\Debug\netcoreapp3.1\RedisBuffer.csproj.CopyComplete
+C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\RedisBuffer\obj\Debug\netcoreapp3.1\RedisBuffer.dll
+C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\RedisBuffer\obj\Debug\netcoreapp3.1\RedisBuffer.pdb
+=======
+C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\RedisBuffer\bin\Debug\netcoreapp3.1\RedisBuffer.deps.json
+C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\RedisBuffer\bin\Debug\netcoreapp3.1\RedisBuffer.dll
+C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\RedisBuffer\bin\Debug\netcoreapp3.1\RedisBuffer.pdb
+C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\RedisBuffer\bin\Debug\netcoreapp3.1\Model.dll
+C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\RedisBuffer\bin\Debug\netcoreapp3.1\SqlSugarFrame.dll
+C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\RedisBuffer\bin\Debug\netcoreapp3.1\Model.pdb
+C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\RedisBuffer\bin\Debug\netcoreapp3.1\SqlSugarFrame.pdb
+C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\RedisBuffer\obj\Debug\netcoreapp3.1\RedisBuffer.csprojAssemblyReference.cache
+C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\RedisBuffer\obj\Debug\netcoreapp3.1\RedisBuffer.AssemblyInfoInputs.cache
+C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\RedisBuffer\obj\Debug\netcoreapp3.1\RedisBuffer.AssemblyInfo.cs
+C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\RedisBuffer\obj\Debug\netcoreapp3.1\RedisBuffer.csproj.CoreCompileInputs.cache
+C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\RedisBuffer\obj\Debug\netcoreapp3.1\RedisBuffer.csproj.CopyComplete
+C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\RedisBuffer\obj\Debug\netcoreapp3.1\RedisBuffer.dll
+C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\RedisBuffer\obj\Debug\netcoreapp3.1\RedisBuffer.pdb
+>>>>>>> bd95b77ce3b78e9139fb2dfa5d9f3b1ad0b7b538

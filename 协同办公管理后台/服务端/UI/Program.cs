@@ -18,7 +18,7 @@ namespace UI
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args).ConfigureLogging(LoggingBuilder => {
-                LoggingBuilder.AddLog4Net();
+                object p = LoggingBuilder.AddLog4Net();
             })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
