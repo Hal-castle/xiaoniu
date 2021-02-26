@@ -5,7 +5,11 @@ using SqlSugar;
 namespace Model
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     //用户表
+=======
+    //人员表
+>>>>>>> bd95b77ce3b78e9139fb2dfa5d9f3b1ad0b7b538
 =======
     //人员表
 >>>>>>> bd95b77ce3b78e9139fb2dfa5d9f3b1ad0b7b538

@@ -1,11 +1,17 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 2021-02-26 14:35:49,286 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
 2021-02-26 14:35:49,306 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
 2021-02-26 14:35:49,310 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
 2021-02-26 14:35:49,314 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\UI
 =======
+=======
+>>>>>>> bd95b77ce3b78e9139fb2dfa5d9f3b1ad0b7b538
 2021-02-25 16:18:01,136 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
 2021-02-25 16:18:01,327 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
 2021-02-25 16:18:01,333 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
 2021-02-25 16:18:01,337 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\UI
+<<<<<<< HEAD
+>>>>>>> bd95b77ce3b78e9139fb2dfa5d9f3b1ad0b7b538
+=======
 >>>>>>> bd95b77ce3b78e9139fb2dfa5d9f3b1ad0b7b538

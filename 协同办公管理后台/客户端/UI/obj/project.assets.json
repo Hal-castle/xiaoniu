@@ -9,8 +9,11 @@
   },
   "packageFolders": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\liuwanting\\.nuget\\packages\\": {}
 =======
+=======
+>>>>>>> bd95b77ce3b78e9139fb2dfa5d9f3b1ad0b7b538
     "C:\\Users\\admin\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
 >>>>>>> bd95b77ce3b78e9139fb2dfa5d9f3b1ad0b7b538
@@ -18,6 +21,7 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
 <<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\liuwanting\\Desktop\\xiaoniu\\协同办公管理后台\\客户端\\UI\\UI.csproj",
       "projectName": "UI",
@@ -31,10 +35,21 @@
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\admin\\桌面\\协调管理系统\\协同办公管理后台\\客户端\\UI\\obj\\",
 >>>>>>> bd95b77ce3b78e9139fb2dfa5d9f3b1ad0b7b538
+=======
+      "projectUniqueName": "C:\\Users\\admin\\桌面\\协调管理系统\\协同办公管理后台\\客户端\\UI\\UI.csproj",
+      "projectName": "UI",
+      "projectPath": "C:\\Users\\admin\\桌面\\协调管理系统\\协同办公管理后台\\客户端\\UI\\UI.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\admin\\桌面\\协调管理系统\\协同办公管理后台\\客户端\\UI\\obj\\",
+>>>>>>> bd95b77ce3b78e9139fb2dfa5d9f3b1ad0b7b538
       "projectStyle": "PackageReference",
       "configFilePaths": [
 <<<<<<< HEAD
+<<<<<<< HEAD
         "C:\\Users\\liuwanting\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> bd95b77ce3b78e9139fb2dfa5d9f3b1ad0b7b538
 =======
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> bd95b77ce3b78e9139fb2dfa5d9f3b1ad0b7b538

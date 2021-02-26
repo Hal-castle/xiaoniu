@@ -50,6 +50,7 @@ C:\Users\admin\桌面\协调管理小项目\xiaoniu\协同办公管理后台\服
 C:\Users\admin\桌面\协调管理小项目\xiaoniu\协同办公管理后台\服务端\SqlSugar\obj\Debug\netcoreapp3.1\SqlSugarFrame.pdb
 >>>>>>> b233e12016e484382848856e04d506619df595cd
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\SqlSugar\bin\Debug\netcoreapp3.1\SqlSugarFrame.deps.json
 C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\SqlSugar\bin\Debug\netcoreapp3.1\SqlSugarFrame.dll
 C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\SqlSugar\bin\Debug\netcoreapp3.1\SqlSugarFrame.pdb
@@ -63,6 +64,8 @@ C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\SqlSugar\
 C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\SqlSugar\obj\Debug\netcoreapp3.1\SqlSugarFrame.dll
 C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\SqlSugar\obj\Debug\netcoreapp3.1\SqlSugarFrame.pdb
 =======
+=======
+>>>>>>> bd95b77ce3b78e9139fb2dfa5d9f3b1ad0b7b538
 C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\SqlSugar\bin\Debug\netcoreapp3.1\SqlSugarFrame.deps.json
 C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\SqlSugar\bin\Debug\netcoreapp3.1\SqlSugarFrame.dll
 C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\SqlSugar\bin\Debug\netcoreapp3.1\SqlSugarFrame.pdb
@@ -75,4 +78,7 @@ C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\SqlS
 C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\SqlSugar\obj\Debug\netcoreapp3.1\SqlSugarFrame.csproj.CopyComplete
 C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\SqlSugar\obj\Debug\netcoreapp3.1\SqlSugarFrame.dll
 C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\SqlSugar\obj\Debug\netcoreapp3.1\SqlSugarFrame.pdb
+<<<<<<< HEAD
+>>>>>>> bd95b77ce3b78e9139fb2dfa5d9f3b1ad0b7b538
+=======
 >>>>>>> bd95b77ce3b78e9139fb2dfa5d9f3b1ad0b7b538
