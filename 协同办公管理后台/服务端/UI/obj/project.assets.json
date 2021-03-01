@@ -7711,23 +7711,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\liuwanting\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\桌面\\协调管理系统\\协同办公管理后台\\服务端\\UI\\UI.csproj",
+      "projectUniqueName": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\UI\\UI.csproj",
       "projectName": "UI",
-      "projectPath": "C:\\Users\\admin\\桌面\\协调管理系统\\协同办公管理后台\\服务端\\UI\\UI.csproj",
-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\桌面\\协调管理系统\\协同办公管理后台\\服务端\\UI\\obj\\",
+      "projectPath": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\UI\\UI.csproj",
+      "packagesPath": "C:\\Users\\liuwanting\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\UI\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\liuwanting\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7741,14 +7737,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\admin\\桌面\\协调管理系统\\协同办公管理后台\\服务端\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\admin\\桌面\\协调管理系统\\协同办公管理后台\\服务端\\Model\\Model.csproj"
+            "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj"
             },
-            "C:\\Users\\admin\\桌面\\协调管理系统\\协同办公管理后台\\服务端\\RedisBuffer\\RedisBuffer.csproj": {
-              "projectPath": "C:\\Users\\admin\\桌面\\协调管理系统\\协同办公管理后台\\服务端\\RedisBuffer\\RedisBuffer.csproj"
+            "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\RedisBuffer\\RedisBuffer.csproj": {
+              "projectPath": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\RedisBuffer\\RedisBuffer.csproj"
             },
-            "C:\\Users\\admin\\桌面\\协调管理系统\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj": {
-              "projectPath": "C:\\Users\\admin\\桌面\\协调管理系统\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj"
+            "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj": {
+              "projectPath": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj"
             }
           }
         }

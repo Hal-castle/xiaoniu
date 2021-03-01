@@ -11,7 +11,7 @@
     <title></title>
     <link href="~/layui/css/layui.css" rel="stylesheet" />
 </head>
-<body class="layui-layout-body">
+<body class="layui-layout-body" onload="load()">
     <div class="layui-layout layui-layout-admin">
         <div class="layui-header">
             <div class="layui-logo">协同办公管理后台</div>
@@ -29,50 +29,11 @@
                 <li class="layui-nav-item"><a href=""></a></li>
             </ul>
         </div>
-
         <div class="layui-side layui-bg-black">
             <div class="layui-side-scroll">
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
-                <ul class="layui-nav layui-nav-tree" lay-filter="test">
-                    <li class="layui-nav-item layui-nav-itemed">
-                        <a class="" href="javascript:;">单位人事</a>
-                        <dl class="layui-nav-child">
-                            <dd><a href="/HomePage/Unit_management" target="management">单位管理</a></dd>
-                            <dd><a href="/HomePage/Division_management" target="management">部门管理</a></dd>
-                            <dd><a href="/HomePage/People_management" target="management">人员管理</a></dd>
-                            <dd><a href="/HomePage/Group_management" target="management">群组管理</a></dd>
-                            <dd><a href="/HomePage/Post_management" target="management">岗位管理</a></dd>
-                        </dl>
-                    </li>
-                    <li class="layui-nav-item">
-                        <a href="javascript:;">应用管理</a>
-                        <dl class="layui-nav-child">
-                            <dd><a href="/HomePage/Access_application" target="management">接入应用</a></dd>
-                            <dd><a href="/HomePage/Developer_Management" target="management">开发商管理</a></dd>
-                            <dd><a href="/HomePage/Application_classification" target="management">应用分类</a></dd>
-                            <dd><a href="/HomePage/Operation_log" target="management">操作日志</a></dd>
-                        </dl>
-                    </li>
-                    <li class="layui-nav-item">
-                        <a href="javascript:;">公众号</a>
-                        <dl class="layui-nav-child">
-                            <dd><a href="/HomePage/Account_Management" target="management">公众号管理</a></dd>
-                        </dl>
-                    </li>
-                    <li class="layui-nav-item">
-                        <a href="javascript:;">流程管理</a>
-                        <dl class="layui-nav-child">
-                            <dd><a href="/HomePage/Process_management" target="management">流程管理</a></dd>
-                            <dd><a href="/HomePage/Workorder_management" target="management">工单管理</a></dd>
-                        </dl>
-                    </li>
-                    <li class="layui-nav-item">
-                        <a href="javascript:;">系统管理</a>
-                        <dl class="layui-nav-child">
-                            <dd><a href="/HomePage/Role_management" target="management">角色管理</a></dd>
-                            <dd><a href="/HomePage/Dictionary_management" target="management">字典管理</a></dd>
-                        </dl>
-                    </li>
+                <ul class="layui-nav layui-nav-tree" lay-filter="test" id="tittle">
+                  
                 </ul>
             </div>
         </div>
@@ -98,3 +59,48 @@
     </script>
 </body>
 </html>
+<script src="~/js/jquery-3.3.1.js"></script>
+
+<script>
+    function load() {
+        $.ajax({
+            url: 'http://localhost:5000/api/Staff/getRolesPowers?staffId=1',
+            type: 'get',
+            dataType: 'json',
+            contentType: 'application/json',
+            success: function (data) {
+                loadPower(data);
+                layui.use('element', function () {
+                    var element = layui.element;
+                    element.init();
+                });
+            }
+        })
+    }
+    function loadPower(data) {
+        for (var i = 0; i < data.length; i++) {
+            if (data[i].pprev_authority == 0) {
+                var str = '';
+                str +=   ' <li class="layui-nav-item layui-nav-itemed">'
+                str +=   ' <a class="" href="javascript:;">' + data[i].pname + '</a>'
+                str +=   ' <dl class="layui-nav-child">'
+                str +=   loadNextPower(data[i].pid, data)
+                str +=   ' </dl>'
+                str +=   ' </li>'
+                str.replace('<dl class="layui-nav-child"></dl>', '');
+                $("#tittle").append(str);
+            }
+        }
+    }
+
+    //加载二级菜单
+    function loadNextPower(prevId, data) {
+        str = '';
+        for (var i = 0; i < data.length; i++) {
+            if (data[i].pprev_authority == prevId) {
+                str += '<dd><a href="' + data[i].paction + '" target="management">' + data[i].pname + '</a></dd>'
+            }
+        }
+        return str;
+    }
+</script>

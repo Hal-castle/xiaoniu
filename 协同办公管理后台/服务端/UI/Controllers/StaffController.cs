@@ -40,35 +40,50 @@ namespace UI.Controllers
         }
 
         //获取用户的角色
-        [HttpGet]
-        public IEnumerable<int> getStaffRoles(int id)
+        public IEnumerable<int> getStaffRoles(int staffId)
         {
+            var data = DataSources.GetData<Staff_Role>(ff, true) as IEnumerable<Staff_Role>;
             //获取用户所有角色的id
-            foreach (var item in (DataSources.GetData<Staff_Role>(ff) as IEnumerable<Staff_Role>).Where(item => item.Staff_Id == id))
+            foreach (var item in data)
             {
-                yield return item.Role_Id;
+                if(item.Staff_Id == staffId)
+                {
+                    yield return item.Role_Id;
+                }
             }
         }
+
+        public IEnumerable<int> getPowerIds(int[] roleIds)
+        {
+            var data = DataSources.GetData<Role_Power>(ff, true) as IEnumerable<Role_Power>;
+            foreach (var item in data)
+            {
+                if (roleIds.Contains(item.Role_Id))
+                {
+                    yield return item.Power_Id;
+                }
+            }
+        }
+
         //获取角色的权限
         [HttpGet]
-        public List<Power> getRolesPowers(int staffId)
+        public List<Power> getRolesPowers(int staffId,int prevId = 0)
         {
-            var Cache = new RedisHelper();
-            int[] roleIds = getStaffRoles(staffId).ToArray();
+            //获取角色id
+           int[] roleIds =  getStaffRoles(staffId).ToArray();
+            //获取权限id
+           int[] PowerIds = getPowerIds(roleIds) .ToArray();
+            //获取权限
+            var data = DataSources.GetData<Power>(ff, true) as IEnumerable<Power>;
+            IEnumerable<Power> Powers = data.Where(item => PowerIds.Contains(item.Pid));
 
-            if (!Cache.IsSet("Powers"))
+            if(prevId != 0)
             {
-                int[] PowerIds = (DataSources.GetData<Role_Power>(ff) as IEnumerable<Role_Power>)
-                .Where(item => roleIds.Contains(item.Role_Id))
-                .Select(item => item.Role_Id)
-                .ToArray();
-
-                IEnumerable<Power> Powers = (DataSources.GetData<Power>(ff) as IEnumerable<Power>)
-                    .Where(item => PowerIds.Contains(item.Pid));
-
-                Cache.Set("Powers", Powers, 10);
+                Powers = Powers.Where(item => item.Pprev_authority == prevId);
             }
-            return Cache.Get<IEnumerable<Power>>("Powers").ToList();
+
+            var datas=  Powers.ToList();
+            return datas;
         }
     }
 }

@@ -3,4 +3,418 @@
 *@
 @{
 }
-公众号管理
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Layui</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="~/layui/css/layui.css" rel="stylesheet" />
+    <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+</head>
+<body onload="LoadPower()">
+    <table class="layui-hide" id="test" lay-filter="test"></table>
+
+
+    <form class="layui-form" action="" style="display:none" id="Add">
+        <div class="layui-form-item">
+            <label class="layui-form-label">单位编码</label>
+            <div class="layui-input-inline">
+                <input type="text" name="Ucoding" required lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+            <label class="layui-form-label">单位名称</label>
+            <div class="layui-input-inline">
+                <input type="text" name="Uname" required lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">上级单位</label>
+            <div class="layui-input-inline">
+                <select name="Upname" lay-verify="required" id="classlcj">
+                    <option value="">请选择</option>
+                </select>
+            </div>
+            <label class="layui-form-label">单位级别</label>
+            <div class="layui-input-inline">
+                <select name="Unit_level" lay-verify="required">
+                    <option value="一级">一级</option>
+                    <option value="二级">二级</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">排序</label>
+            <div class="layui-input-inline">
+                <input type="text" name="Usort" required lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+            <label class="layui-form-label">启用</label>
+            <div class="layui-input-inline">
+                <input type="checkbox" name="switch" lay-skin="switch" checked>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="reset" class="layui-btn layui-btn-primary" id="CancelAdd">取消</button>
+                <button class="layui-btn" lay-submit lay-filter="AddOK">确定</button>
+            </div>
+        </div>
+    </form>
+
+    <form class="layui-form" action="" style="display:none" id="Edit" lay-filter="Edit">
+        <div class="layui-form-item">
+            <label class="layui-form-label">单位编码</label>
+            <div class="layui-input-inline">
+                <input type="text" id="Ucoding1" name="Ucoding" required lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+            <label class="layui-form-label">单位名称</label>
+            <div class="layui-input-inline">
+                <input type="text" id="Uname2" name="Uname" required lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">上级单位</label>
+            <div class="layui-input-inline">
+                <select name="Upname" lay-verify="required" id="classlcj2">
+                    <option value="">请选择</option>
+                </select>
+            </div>
+            <label class="layui-form-label">单位级别</label>
+            <div class="layui-input-inline">
+                <select name="Unit_level" lay-verify="required" id="Unit_level1">
+                    <option value="一级">一级</option>
+                    <option value="二级">二级</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">排序</label>
+            <div class="layui-input-inline">
+                <input type="text" id="Usort1" name="Usort" required lay-verify="required" autocomplete="off" class="layui-input">
+            </div>
+            <label class="layui-form-label">启用</label>
+            <div class="layui-input-inline">
+                <input type="checkbox" name="switch" id="switch1" lay-skin="switch">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="reset" class="layui-btn layui-btn-primary" id="CancelEdit">取消</button>
+                <button class="layui-btn" lay-submit lay-filter="EditOK">确定</button>
+            </div>
+        </div>
+    </form>
+
+
+</body>
+</html>
+
+<script type="text/html" id="toolbarDemo">
+
+    <div class="layui-btn-container" style="margin-top:10px;margin-left:15px">
+        <button type="button" class="layui-btn layui-btn-primary" style="width:50px;height:40px" lay-event="refresh" id="refresh"><i class="layui-icon">&#xe666;</i></button>
+        <button type="button" class="layui-btn layui-btn-normal" lay-event="newAdd" id="Addunit">新增</button>
+        <button type="button" class="layui-btn layui-btn-normal" lay-event="Editing" id="Editunit">编辑</button>
+        <button class="layui-btn layui-btn-danger" lay-event="remove" style="margin-left:5px;height:40px" id="Delteunit">删除</button>
+        <button type="button" class="layui-btn layui-btn-primary" style="height:40px" id="Inquire" lay-event="Inquire"><i class="layui-icon">&#xe615;</i></button>
+        <input class="layui-slider-input-txt" style="height:40px" name="Uname" id="Unames" autocomplete="off" placeholder="名称/编码" type="text">
+    </div>
+</script>
+
+<script src="~/layui/layui.js"></script>
+<script src="~/js/jquery-3.3.1.js"></script>
+<script src="~/js/jquery.unobtrusive-ajax.js"></script>
+<!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+
+<script>
+
+
+
+
+
+    layui.use('table', function () {
+        var table = layui.table;
+        var form = layui.form;
+
+        //监听提交
+        form.on('submit(formDemo)', function (data) {
+            layer.msg(JSON.stringify(data.field));
+            return false;
+        });
+        var tableIns = table.render({
+            elem: '#test'
+            , contentType: "application/x-www-form-urlencoded"
+            , url: 'http://localhost:5000/api/Unit_personnel/Get_unit_management'
+            , toolbar: '#toolbarDemo' //开启头部工具栏，并为其绑定左侧模板
+            , defaultToolbar: ['filter', 'exports', 'print', { //自定义头部工具栏右侧图标。如无需自定义，去除该参数即可
+                title: '提示'
+                , layEvent: 'LAYTABLE_TIPS'
+                , icon: 'layui-icon-tips'
+            }]
+            , cols: [[
+                { type: 'checkbox', fixed: 'left' }
+                , { field: 'uname', title: '单位名称', fixed: 'left', }
+                , { field: 'ucoding', title: '单位编码' }
+                , { field: 'unit_level', title: '单位级别' }
+                , { field: 'upname', title: '上级单位' }
+                , {
+                    field: 'ustate', title: '单位状态', templet: function (res) {
+                        if (res.ustate) {
+                            return '<span>启用</span>';
+                        }
+                        else {
+                            return '<span>停用</span>';
+                        }
+                    }
+                }
+                , {
+                    field: 'ubegin', title: '创建时间', sort: true, templet: function (res) {
+                        var lw = new Date(res.ubegin);
+                        var lastY = lw.getFullYear();
+                        var lastM = lw.getMonth() + 1;
+                        var lastD = lw.getDate();
+                        var lastH = lw.getHours();
+                        var lastF = lw.getMinutes();
+                        var lastS = lw.getSeconds();
+                        var startdate = lastY + "-" + (lastM < 10 ? "0" + lastM : lastM) + "-" + (lastD < 10 ? "0" + lastD : lastD) + " " + (lastH < 10 ? "0" + lastH : lastH) + ":" + (lastF < 10 ? "0" + lastF : lastF) + ":" + (lastS < 10 ? "0" + lastS : lastS);
+                        return startdate;
+                    }
+                }
+                , {
+                    field: 'uend', title: '最后修改时间', sort: true, templet: function (res) {
+                        var lw = new Date(res.uend);
+                        var lastY = lw.getFullYear();
+                        var lastM = lw.getMonth() + 1;
+                        var lastD = lw.getDate();
+                        var lastH = lw.getHours();
+                        var lastF = lw.getMinutes();
+                        var lastS = lw.getSeconds();
+                        var startdate = lastY + "-" + (lastM < 10 ? "0" + lastM : lastM) + "-" + (lastD < 10 ? "0" + lastD : lastD) + " " + (lastH < 10 ? "0" + lastH : lastH) + ":" + (lastF < 10 ? "0" + lastF : lastF) + ":" + (lastS < 10 ? "0" + lastS : lastS);
+                        return startdate;
+                    }
+                }
+            ]]
+            , page: true
+            , id: 'reload'
+        });
+
+        //头工具栏事件
+        table.on('toolbar(test)', function (obj) {
+            var checkStatus = table.checkStatus(obj.config.id);
+            switch (obj.event) {
+                //删除
+                case 'remove':
+                    var data = checkStatus.data;
+                    //判断是否选中行
+                    if (data.length == 0) {
+                        layer.alert('对不起，请选择您需要删除的数据!');
+                        return;
+                    }
+                    if (confirm('您确定要删除么？')) {
+                        var str = [];
+                        $(data).each(function () {
+                            str.push(this.uid);
+                        })
+                        $.ajax({
+                            url: "http://localhost:5000/api/Unit_personnel/Delete_unit_management?Uid=" + str.toString(),
+                            type: "delete",
+                            success: function (result) {
+                                if (result) {
+                                    alert("删除成功！");
+                                    //修改添加后刷新父界面
+                                    window.location.reload();
+                                }
+                                else {
+                                    alert("删除失败！");
+                                }
+                            }
+                        });
+                    }
+                    break;
+                //修改
+                case 'Editing':
+                    var data = checkStatus.data;
+                    //判断是否选中行
+                    if (data.length != 1) {
+                        layer.alert('对不起，请选择一条数据进行修改!');
+                        return;
+                    }
+                    layer.open({
+                        title: '修改数据',
+                        type: 1,
+                        content: $('#Edit'), //这里content是一个DOM，注意：最好该元素要存放在body最外层，否则可能被其它的相对元素所影响
+                        area: ['700px', '300px'], //自定义文本域宽高
+                        success: function () {
+                            $("#Ucoding1").val(data[0].ucoding);
+                            $("#classlcj2").val(data[0].upname);
+                            $("#Uname2").val(data[0].uname);
+                            $("#Unit_level1").val(data[0].unit_level);
+                            $("#Usort1").val(data[0].usort);
+                            if (data[0].ustate) {
+                                $("#switch1").prop("checked", true);
+                            }
+                            form.render();
+                            //form.val("Edit", data);
+                            //修改操作的表单提交事件
+                            form.on('submit(EditOK)', function (result) {
+                                //判断是否含有switch属性，如果有为真，否则为假
+                                result.field.Ustate = result.field.hasOwnProperty('switch');
+                                //给编号id赋值
+                                result.field.Uid = data[0].uid;
+                                //给创建时间赋值
+                                result.field.Ubegin = data[0].ubegin;
+                                $.ajax({
+                                    url: "http://localhost:5000/api/Unit_personnel/Edit_unit_management",
+                                    type: 'post',
+                                    data: JSON.stringify(result.field),
+                                    dataType: 'json',
+                                    contentType: 'application/json',
+                                    success: function (result) {
+                                        if (result > 0) {
+                                            alert("修改成功！");
+                                            layer.closeAll(); //关闭所有层
+                                            //修改添加后刷新父界面
+                                            window.location.reload();
+                                        }
+                                        else {
+                                            alert("修改失败！");
+                                        }
+                                    }
+                                });
+                                return false;
+                            })
+                        }
+                    });
+                    break;
+                //添加
+                case 'newAdd':
+                    layui.use('layer', function () {
+                        var layer = layui.layer;
+                        var form = layui.form;
+                        layer.open({
+                            title: '添加数据',
+                            type: 1,
+                            content: $('#Add'), //这里content是一个DOM，注意：最好该元素要存放在body最外层，否则可能被其它的相对元素所影响
+                            area: ['700px', '300px'] //自定义文本域宽高
+                            , success: function () {
+                                $.ajax({
+                                    url: "http://localhost:5000/api/Unit_personnel/Bind_superior_units",
+                                    type: "get",
+                                    success: function (result) {
+                                        var str = "<option value=0>全部</option>";
+
+                                        $(result.data).each(function () {
+                                            str += '<option value=' + this.uname + '>' + this.uname + '</option>';
+                                        })
+                                        $("#classlcj").empty();
+                                        $("#classlcj").append(str);
+                                        form.render('select'); //刷新select选择框渲染
+                                    }
+                                })
+                            }
+                        });
+                    });
+                    break;
+                //刷新
+                case 'refresh':
+                    location.reload();
+                    break;
+                //查询
+                case 'Inquire':
+                    //这里以搜索为例
+                    tableIns.reload({
+                        where: { //设定异步数据接口的额外参数，任意设
+                            Uname: $("#Unames").val()
+                        }
+                        , page: {
+                            curr: 1 //重新从第 1 页开始
+                        }
+                    });
+                    break;
+                //自定义头工具栏右侧图标 - 提示
+                case 'LAYTABLE_TIPS':
+                    layer.alert('这是工具栏右侧自定义的一个图标按钮');
+                    break;
+            };
+        });
+
+
+        //添加操作的表单提交事件
+        form.on('submit(AddOK)', function (data) {
+            //判断是否含有switch属性，如果有为真，否则为假
+            data.field.Ustate = data.field.hasOwnProperty('switch');
+            $.ajax({
+                url: "http://localhost:5000/api/Unit_personnel/Add_unit_management",
+                type: 'post',
+                data: JSON.stringify(data.field),
+                dataType: 'json',
+                contentType: 'application/json',
+                success: function (result) {
+                    if (result > 0) {
+                        alert("添加成功！");
+                        layer.closeAll(); //关闭所有层
+                        //修改添加后刷新父界面
+                        window.location.reload();
+                    }
+                    else {
+                        alert("添加失败！");
+                    }
+                }
+            });
+            return false;
+        })
+        $(function () {
+            $.ajax({
+                url: "http://localhost:5000/api/Unit_personnel/Bind_superior_units",
+                type: "get",
+                success: function (result) {
+                    var str = "<option value=''>请选择</option>";
+
+                    $(result.data).each(function () {
+                        str += '<option value=' + this.uname + '>' + this.uname + '</option>';
+                    })
+                    $("#classlcj2").empty();
+                    $("#classlcj2").append(str);
+                    form.render('select'); //刷新select选择框渲染
+                }
+            });
+        })
+        //添加表单的取消
+        $("#CancelAdd").click(function () {
+            layer.closeAll(); //关闭所有层
+        })
+        //修改表单的取消
+        $("#CancelEdit").click(function () {
+            layer.closeAll();//关闭所有层
+        })
+    });
+</script>
+
+<script>
+    function LoadPower() {
+        $.ajax({
+            url: 'http://localhost:5000/api/Staff/getRolesPowers?staffId=1&prevId=16',
+            type: 'get',
+            success: function (data) {
+                var AllName = [];
+                var obj = [{ pname: '管理表添加', btname: '#Addunit' }, { pname: '管理表删除', btname: '#Delteunit' }, { pname: '管理表修改', btname: '#Editunit' }]
+                for (var i = 0; i < data.length; i++) {
+                    AllName.push(data[i].pname);
+                }
+                for (var i = 0; i < obj.length; i++) {
+                    if (AllName.indexOf(obj[i].pname) == -1) {
+                        $(obj[i].btname).remove();
+                    }
+                }
+                if (AllName.indexOf('管理表数据') != -1) {
+                    loadData();
+                }
+            }
+        })
+    }
+    //加载数据表格
+    function loadData() {
+        alert('加载数据')
+    }
+</script>

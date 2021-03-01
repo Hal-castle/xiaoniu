@@ -37,8 +37,6 @@ C:\Users\admin\桌面\协调管理小项目\xiaoniu\协同办公管理后台\服
 C:\Users\admin\桌面\协调管理小项目\xiaoniu\协同办公管理后台\服务端\Model\obj\Debug\netcoreapp3.1\Model.dll
 C:\Users\admin\桌面\协调管理小项目\xiaoniu\协同办公管理后台\服务端\Model\obj\Debug\netcoreapp3.1\Model.pdb
 >>>>>>> b233e12016e484382848856e04d506619df595cd
-<<<<<<< HEAD
-<<<<<<< HEAD
 C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\Model\bin\Debug\netcoreapp3.1\Model.deps.json
 C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\Model\bin\Debug\netcoreapp3.1\Model.dll
 C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\Model\bin\Debug\netcoreapp3.1\Model.pdb
@@ -48,8 +46,6 @@ C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\Model\obj
 C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\Model\obj\Debug\netcoreapp3.1\Model.csproj.CoreCompileInputs.cache
 C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\Model\obj\Debug\netcoreapp3.1\Model.dll
 C:\Users\liuwanting\Desktop\xiaoniu\协同办公管理后台\服务端\Model\obj\Debug\netcoreapp3.1\Model.pdb
-=======
-=======
 >>>>>>> bd95b77ce3b78e9139fb2dfa5d9f3b1ad0b7b538
 C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\Model\bin\Debug\netcoreapp3.1\Model.deps.json
 C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\Model\bin\Debug\netcoreapp3.1\Model.dll
@@ -60,7 +56,12 @@ C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\Mode
 C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\Model\obj\Debug\netcoreapp3.1\Model.csproj.CoreCompileInputs.cache
 C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\Model\obj\Debug\netcoreapp3.1\Model.dll
 C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\Model\obj\Debug\netcoreapp3.1\Model.pdb
-<<<<<<< HEAD
->>>>>>> bd95b77ce3b78e9139fb2dfa5d9f3b1ad0b7b538
-=======
->>>>>>> bd95b77ce3b78e9139fb2dfa5d9f3b1ad0b7b538
+C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\Model\obj\Debug\netcoreapp3.1\Model.csprojAssemblyReference.cache
+C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfoInputs.cache
+C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfo.cs
+C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\Model\obj\Debug\netcoreapp3.1\Model.csproj.CoreCompileInputs.cache
+C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\Model\obj\Debug\netcoreapp3.1\Model.dll
+C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\Model\obj\Debug\netcoreapp3.1\Model.pdb
+C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\Model\bin\Debug\netcoreapp3.1\Model.deps.json
+C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\Model\bin\Debug\netcoreapp3.1\Model.dll
+C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\Model\bin\Debug\netcoreapp3.1\Model.pdb

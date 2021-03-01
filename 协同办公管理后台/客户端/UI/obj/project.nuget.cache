@@ -1,20 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "dgSpecHash": "KXcyfqZ5PK4XPMKn536fyjtVNLUseLFJfz8AIFvxFjbCIBn3biyGUjOPAtK1G6KjVNkqjvz93vc3nW1wISxpqw==",
+  "dgSpecHash": "F1MPQGt+h4M8W3deCJL8azv28hHtc+MQGfAd1Sd2SZjmpvKumtyTBlfTXF9B4QZoVfeTfvFN+GtgpuXrltMeng==",
   "success": true,
-  "projectFilePath": "C:\\Users\\liuwanting\\Desktop\\xiaoniu\\协同办公管理后台\\客户端\\UI\\UI.csproj",
-=======
-  "dgSpecHash": "Ncimw8rmlHeBSsB3TqTIAfHMHdtcAr+7tsgN+zEI6dkrSDWwzMKYJILj9wQV3FGGxtiLN3/+8TRnhqJhLtQF2Q==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\admin\\桌面\\协调管理系统\\协同办公管理后台\\客户端\\UI\\UI.csproj",
->>>>>>> bd95b77ce3b78e9139fb2dfa5d9f3b1ad0b7b538
-=======
-  "dgSpecHash": "Ncimw8rmlHeBSsB3TqTIAfHMHdtcAr+7tsgN+zEI6dkrSDWwzMKYJILj9wQV3FGGxtiLN3/+8TRnhqJhLtQF2Q==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\admin\\桌面\\协调管理系统\\协同办公管理后台\\客户端\\UI\\UI.csproj",
->>>>>>> bd95b77ce3b78e9139fb2dfa5d9f3b1ad0b7b538
+  "projectFilePath": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\客户端\\UI\\UI.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "读取缓存文件 C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\客户端\\UI\\obj\\project.nuget.cache 时遇到问题: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

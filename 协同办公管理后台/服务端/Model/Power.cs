@@ -22,5 +22,8 @@ namespace Model
         public int Psort { get; set; }
         ///备注
         public string Plist { get; set; }
+        //地址
+        public string Paction { get; set; }
+
     }
 }
