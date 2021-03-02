@@ -16,9 +16,6 @@ namespace Model
         public string Rcoding { get; set; }
         ///修改时间
         public DateTime Rtimes { get; set; }
-        ///用户外键
-        public int Ruser_id { get; set; }
-        ///角色权限
-        public int Role_based { get; set; }
+
     }
 }

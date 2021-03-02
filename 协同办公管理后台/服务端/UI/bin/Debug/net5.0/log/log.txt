@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2021-03-02 10:27:43,359 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
 2021-03-02 10:27:43,368 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
 2021-03-02 10:27:43,370 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
@@ -208,3 +209,17 @@ System.Data.SqlClient.SqlException (0x80131904): 在将 varchar 值 'undefined' 
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 ClientConnectionId:312d91fc-43dc-4609-a18a-3ed53f1c0535
 Error Number:245,State:1,Class:16
+=======
+2021-02-28 20:25:25,391 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-02-28 20:25:25,417 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-02-28 20:25:25,423 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-02-28 20:25:25,430 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\UI
+2021-02-28 20:28:40,171 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-02-28 20:28:40,211 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-02-28 20:28:40,217 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-02-28 20:28:40,245 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\UI
+2021-02-28 20:33:33,975 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-02-28 20:33:34,034 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-02-28 20:33:34,043 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-02-28 20:33:34,050 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\UI
+>>>>>>> 437d8b7f70720f61d9a81f88c184282fde5f7e85

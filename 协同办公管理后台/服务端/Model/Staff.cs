@@ -4,7 +4,7 @@ using System.Text;
 using SqlSugar;
 namespace Model
 {
-    //人员表
+
     public class Staff
     {
         [SugarColumn(IsPrimaryKey = true, IsIdentity = true)]//主键并且自增 （string不能设置自增）
@@ -44,7 +44,5 @@ namespace Model
         public string Staff_Account { get; set; }
         //密码
         public string Staff_Password { get; set; }
-        //角色（外键）
-        public int Staff_Role_Id { get; set; }
     }
 }

@@ -29,7 +29,11 @@ namespace SqlSugar
                 IsAutoCloseConnection = true,//开启自动释放模式和EF原理一样我就不多解释了
 
             });
+<<<<<<< HEAD
             CreateTable(false, 50, typeof(Student), typeof(Units), typeof(InsertApply),typeof(AppArrange),typeof(Developers));
+=======
+            CreateTable(false, 50, typeof(Student), typeof(Units), typeof(Staff), typeof(Staff_Role), typeof(Role), typeof(Role_Power), typeof(Power));
+>>>>>>> 437d8b7f70720f61d9a81f88c184282fde5f7e85
         }
         private void CreateTable(bool Backup = false, int StringDefaultLength = 50, params Type[] types)
         {
@@ -48,7 +52,15 @@ namespace SqlSugar
         public SimpleClient<AppArrange> AppArrangeDb { get { return new SimpleClient<AppArrange>(Db); } }//应用分类表
         public SimpleClient<Student> studentDb { get { return new SimpleClient<Student>(Db); } }//学生表
         public SimpleClient<Units> UnitsDb { get { return new SimpleClient<Units>(Db); } }//字典表
+<<<<<<< HEAD
         public SimpleClient<InsertApply> InsertApplyDb { get { return new SimpleClient<InsertApply>(Db); } }//接入应用表
+=======
+        public SimpleClient<Staff> StaffDb { get { return new SimpleClient<Staff>(Db); } }//用户表
+        public SimpleClient<Staff_Role> Staff_RoleDb { get { return new SimpleClient<Staff_Role>(Db); } }//用户角色表
+        public SimpleClient<Role> RoleDb { get { return new SimpleClient<Role>(Db); } }//角色表
+        public SimpleClient<Role_Power> Role_PowerDb { get { return new SimpleClient<Role_Power>(Db); } }//角色权限表
+        public SimpleClient<Power> PowerDb { get { return new SimpleClient<Power>(Db); } }//权限表
+>>>>>>> 437d8b7f70720f61d9a81f88c184282fde5f7e85
         //注意：不能写成静态的
         public SqlSugarClient Db;//用来处理事务多表查询和复杂的操作
 

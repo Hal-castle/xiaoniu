@@ -52,23 +52,36 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\29462\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+=======
+    "C:\\Users\\liuwanting\\.nuget\\packages\\": {}
+>>>>>>> 437d8b7f70720f61d9a81f88c184282fde5f7e85
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\客户端\\UI\\UI.csproj",
       "projectName": "UI",
       "projectPath": "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\客户端\\UI\\UI.csproj",
       "packagesPath": "C:\\Users\\29462\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\客户端\\UI\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\客户端\\UI\\UI.csproj",
+      "projectName": "UI",
+      "projectPath": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\客户端\\UI\\UI.csproj",
+      "packagesPath": "C:\\Users\\liuwanting\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\客户端\\UI\\obj\\",
+>>>>>>> 437d8b7f70720f61d9a81f88c184282fde5f7e85
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\29462\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\liuwanting\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 437d8b7f70720f61d9a81f88c184282fde5f7e85
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -120,5 +133,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "读取缓存文件 C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\客户端\\UI\\obj\\project.nuget.cache 时遇到问题: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
