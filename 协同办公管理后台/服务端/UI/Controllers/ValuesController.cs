@@ -10,6 +10,7 @@ using Model;
 using RedisBuffer;
 using StackExchange.Redis;
 using Microsoft.Extensions.Logging;
+using System.Linq.Expressions;
 
 namespace UI.Controllers
 {
@@ -37,7 +38,7 @@ namespace UI.Controllers
         public int Add([FromBody] Student stu)
         {
             ff.db<Student>().Insert(stu);//调用实体类，执行添加操作
-            DataSources.GetData<Student>(ff,true);//将改动的数据在redis中重新加载
+            DataSources.GetData<Student>(ff, true);//将改动的数据在redis中重新加载
             return 1;
         }
         //删除
@@ -46,13 +47,6 @@ namespace UI.Controllers
         {
             bool status = ff.db<Student>().Delete(s => s.Id == Id);//调用实体类，执行删除操作
             DataSources.GetData<Student>(ff, true);//将改动的数据在redis中重新加载
-            return status;
-        }
-        [HttpPut]
-        public bool Put(Student stu)
-        {
-            bool status = ff.db<Student>().Update(stu);
-            DataSources.GetData<Student>(ff, true);
             return status;
         }
     }

@@ -1,0 +1,108 @@
+﻿h3 {
+    border-color: #0079fe;
+    border-left-style: solid;
+    padding-left: 7px;
+    border-width: 5px;
+    margin-right: 20px;
+    font-weight: 500;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+.layui-table-cell {
+    height: auto !important;
+    white-space: normal;
+}
+#query {
+    margin-left: 20px;
+    background-color: greenyellow;
+    width: 90%;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+    #query > span {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #query button {
+        /*margin-left: 20px;*/
+    }
+b {
+    color: red;
+}
+
+.img {
+    height: 75px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#img {
+    border: solid 2px rgb(235, 235, 235);
+    background-color: rgb(249, 249, 249);
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin-left: 40px;
+}
+
+    #img div {
+        height: 75px;
+        margin-top: 35px;
+    }
+
+#left {
+    height: 600px;
+    width: 300px;
+    float: left;
+}
+
+#right {
+    height: 600px;
+    width: 500px;
+    float: left;
+    margin-left: 80px;
+}
+
+    #right p {
+        margin-top: 65px;
+        margin-bottom: 10px;
+    }
+
+#bottom {
+    margin-left: 50px;
+    clear: both;
+}
+
+    #bottom div {
+        float: left;
+        margin-right: 100px;
+    }
+
+        #bottom div p {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+    #bottom + div {
+        float: right;
+        margin-top: 40px;
+        margin-right: 1100px;
+        width: 800px
+    }
+
+#img img {
+    position: absolute;
+    top: -35px;
+    border: solid 0px rgb(235, 235, 235);
+}
+
+input.layui-input.layui-unselect {
+    width: 200px
+}

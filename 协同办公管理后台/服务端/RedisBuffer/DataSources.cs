@@ -18,7 +18,7 @@ namespace RedisBuffer
         /// <param name="ff">SqlSugar框架的实体类</param>
         /// <param name="iss">是否是对数据操作</param>
         /// <returns></returns>
-        public static object GetData<T>(UnitOfWork ff,bool iss = false) where T : class, new()
+        public static List<T> GetData<T>(UnitOfWork ff, bool iss = false) where T : class, new()
         {
             Type t = typeof(T);//获取传入的数据类型
             var Key = t.Name;//获取数据的名称

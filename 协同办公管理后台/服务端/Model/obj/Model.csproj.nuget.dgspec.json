@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\桌面\\协调管理系统\\协同办公管理后台\\服务端\\Model\\Model.csproj": {}
+    "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\桌面\\协调管理系统\\协同办公管理后台\\服务端\\Model\\Model.csproj": {
+    "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\桌面\\协调管理系统\\协同办公管理后台\\服务端\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\admin\\桌面\\协调管理系统\\协同办公管理后台\\服务端\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\桌面\\协调管理系统\\协同办公管理后台\\服务端\\Model\\obj\\",
+        "projectPath": "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\29462\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\29462\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

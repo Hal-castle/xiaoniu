@@ -3,4 +3,345 @@
 *@
 @{
 }
-接入应用
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="~/layui/css/layui.css" rel="stylesheet" />
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+    <script src="~/js/jquery-3.3.1.js"></script>
+</head>
+<body style="background-color: #f5f6f9;">
+    <div style="margin-left: 20px;">
+        <h3>接入应用</h3>
+    </div>
+    <div id="query" style="background-color:#ffffff">
+        <span style="font-size: 15px;">筛选</span>
+        <div class="layui-input-inline">
+            <select style="margin-right: 20px;" id="type">
+                <option value="0">应用类型</option>
+                <option value="1">HTML5</option>
+                <option value="2">小程序</option>
+                <option value="3">Web应用</option>
+            </select>
+            <select style="margin-right: 20px;" id="status">
+                <option value="2">状态</option>
+                <option value="0">未上线</option>
+                <option value="1">已上线</option>
+            </select>
+        </div>
+        <input type="text" style="display: inline;width: 200px;margin-top: 16px;" lay-verify="required" id="name"
+               placeholder="🔍	输入应用名称和编码" class="layui-input">
+        <button type="button" class="layui-btn layui-btn-normal" id="querybtn">查询</button>
+        <button type="button" class="layui-btn layui-btn-warm" id="result">重置</button>
+    </div>
+    <div style="margin-left: 20px;width: 90%;height:700px;background-color:#ffffff">
+        <div id="fun" style="padding-top: 10px;">
+            <button type="button" class="layui-btn layui-btn-normal">新增</button>
+            <button type="button" class="layui-btn">应用管理</button>
+            <button type="button" class="layui-btn">上线</button>
+            <button type="button" class="layui-btn">更新</button>
+            <button type="button" class="layui-btn">下架</button>
+            <button type="button" class="layui-btn layui-btn-danger">删除</button>
+            <button type="button" class="layui-btn">导出</button>
+        </div>
+        <table class="layui-hide" id="test" style="text-align:center;margin: 0 auto;"></table>
+    </div>
+    <!-- 添加弹出层 -->
+    <div id="Add" hidden="hidden">
+        <form id="addform"  class="layui-form">
+            <div id="left">
+                <h2 style="margin-left: 40px;margin-top: 20px;">应用基本信息</h2>
+                <p style="margin-left: 40px;margin-top: 20px;margin-bottom: 20px;"><b style="color: red;">*</b>应用LOGO</p>
+                <div class="layui-form-item">
+                    <div id="img">
+                        <div class="img">
+                            <img class="layui-upload-img" width="150" height="150" id="demo1">
+                            <input name="InsertApply_Img" lay-verify="required" type="hidden" />
+                            <!-- <p style="font-size: 28px;"> -->
+                            <p style="font-family: helvetica;color: rgb(182, 181, 181);margin-left: 70px;">+</p>
+                            <!-- </p> -->
+                            <!-- <p style="font-size: 14px;"> -->
+                            <p style="font-family: pristina;color: rgb(182, 181, 181);margin-left: 45px;margin-top: 0px;">上传图片</p>
+                            <!-- </p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- right -->
+            <div id="right">
+
+                <!-- 应用名称 -->
+                <div style="float: left;">
+                    <p><b style="color: red;">*</b>应用名称</p>
+                    <div class="layui-input-inline">
+                        <input type="text" style="display: inline;width: 200px;" lay-verify="required" name="InsertApply_Name" placeholder="请输入应用名称" class="layui-input">
+                    </div>
+
+                    <p style="margin-top: 20px;"><b style="color: red;">*</b>应用类型</p>
+                    <div class="layui-input-inline">
+                        <select lay-verify="required" name="AppType">
+                            <option>请选择</option>
+                            <option value="1">HTML5</option>
+                            <option value="2">小程序</option>
+                            <option value="3">Web应用</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- 应用编码 -->
+                <div style="float: left;margin-left: 80px;margin-bottom: 50px;">
+                    <p><b style="color: red;">*</b>应用编码</p>
+                    <div class="layui-input-inline">
+                        <input lay-verify="required" type="text" name="InsertApply_encoding" style="display: inline;width: 200px;" placeholder="请输入应用编码"
+                               class="layui-input">
+                    </div>
+
+                    <p style="margin-top: 20px;"><b style="color: red;">*</b>认证方式</p>
+                    <div class="layui-input-inline">
+                        <select lay-verify="required">
+                            <option value="">单点登录</option>
+                            <option>单点登录+人脸认证</option>
+                            <option>单点登录+密码认证</option>
+                            <option>单点登录+指纹认证</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- 应用介绍 -->
+                <div style="clear: both;">
+                    <p><b style="color: red;">*</b>应用介绍</p>
+                    <div class="layui-input-inline">
+                        <textarea lay-verify="required" placeholder="请输入介绍信息" style="width:500px;height: 250px;" name="InsertApply_synopsis" class="layui-textarea"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div id="bottom">
+                <h3>开发商信息</h3>
+                <div>
+                    <p><b style="color: red;">*</b>开发商</p>
+                    <input type="text" style="display: inline;width: 200px;" placeholder="请输入邮编" class="layui-input">
+                </div>
+                <div>
+                    <p><b style="color: red;">*</b>联系人</p>
+                    <input type="text" style="display: inline;width: 200px;" placeholder="请填写联系人" class="layui-input">
+                </div>
+                <div>
+                    <p><b style="color: red;">*</b>职位</p>
+                    <input type="text" style="display: inline;width: 200px;" placeholder="请填写职位" class="layui-input">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+<script src="~/layui/layui.all.js"></script>
+<script>
+    var table = layui.table;
+    var layer = layui.layer;
+    var form = layui.form;
+    var upload = layui.upload;
+    //表格加载
+    var tablers = table.render({
+        elem: '#test'
+        , limit: 3
+        , limits: [3, 6, 9]
+        , contentType: "application/x-www-form-urlencoded"
+        , url: "http://localhost:5000/api/ApplyManage/get"
+        , page: true//开启分页
+        , cols: [[ //表头
+            { type: 'checkbox' }
+            , { field: 'insertApply_Img', title: '应用Logo', templet: "#imgtmp", align: "center" }
+            , { field: 'insertApply_Name', title: '应用名称' }
+            , { field: 'insertApply_encoding', title: '应用编码' }
+            , { field: 'insertApply_synopsis', title: '应用简介' }
+            , {
+                field: 'appType', title: '应用类型'
+                , templet: function (d) {
+                    switch (d.appType) {
+                        case 1: return "HTML5";
+                            break;
+                        case 2: return "小程序";
+                            break;
+                        case 3: return "Web应用";
+                            break;
+                    }
+                }
+            }
+            , {
+                field: 'insertApply_tatus', title: '应用状态'
+                , templet: function (d) {
+                    return d.insertApply_tatus = "0" ? "未上线" : "已上线";
+                }
+            }
+            , {
+                field: 'insertApply_ChangeTime', title: '最后修改时间'
+                , templet: function (d) {
+                    return dateToStr(d.insertApply_ChangeTime);
+                }
+            }
+        ]]
+    });
+    //查询
+    $("#querybtn").click(function () {
+        //这里以搜索为例
+        tablers.reload({
+            where: {
+                apptype: $("#type").val(),//JSON.stringify(),
+                status: $("#status").val(),
+                Name: $("#name").val()
+            }
+            //,dataType: 'json'
+            //,contentType: 'application/json'
+            , page: {
+                curr: 1 //重新从第 1 页开始
+            }
+        });
+    })
+    //重置
+    $("#result").click(function () {
+        $("#type").val(0)
+        $("#status").val(2)
+        $("#name").val(null)
+        tablers.reload();
+    })
+    //新增弹出层
+    $("#fun button:first").click(function () {
+
+        newadd = layer.open({
+            type: 1
+            , area: ['1000px', '700px']
+            , btn: ['确定', '取消']
+            , btn1: function (index, layero) {
+            }
+            , btn2: function (index, layero) {
+                layer.close(newadd);
+            }
+            , title: "新增应用"
+            , closeBtn: 1
+            , success: function (layero, index) { // 成功弹出后回调
+                document.getElementById("addform").reset()
+                // 解决按enter键重复弹窗问题
+                $(':focus').blur();
+                // 添加form标识
+                layero.addClass('layui-form');
+                // 将保存按钮改变成提交按钮
+                layero.find('.layui-layer-btn0').attr({
+                    'lay-filter': 'addRole',
+                    'lay-submit': ''
+                })
+            }
+            , content: $('#Add') //这里content是一个DOM，注意：最好该元素要存放在body最外层，否则可能被其它的相对元素所影响
+        })
+    })
+    //删除
+    $("#fun button:eq(5)").click(function () {
+        var checkStatus = table.checkStatus('test'); //idTest 即为基础参数 id 对应的值
+        if (checkStatus.data.length == 0) {
+            layer.msg("您未选择任何项！");
+            return;
+        }
+        layer.confirm('您确定要删除选中项吗？', { icon: 3, title: '警告' }, function (index) {
+            console.log(checkStatus.data) //获取选中行的数据
+            var str = "";
+            $(checkStatus.data).each(function () {
+                str += "," + this.insertApply_id;
+            })
+            $.ajax({
+                url: "http://localhost:5000/api/ApplyManage/Del?Ids=" + str,
+                type: 'delete',
+                //dataType: 'json',
+                //contentType: 'application/json',
+                success: function (result) {
+                    if (result) {
+                        tablers.reload();
+                        layer.msg("删除成功！");
+                    }
+                    else {
+                        layer.msg("删除失败！");
+                    }
+                }
+            });
+            layer.close(index);
+        });
+    })
+    //监听提交
+    form.on('submit(addRole)', function (data) {
+        console.log(JSON.stringify(data.field));
+        $.ajax({
+            url: "http://localhost:5000/api/ApplyManage/Add",
+            type: 'post',
+            data: JSON.stringify(data.field),
+            dataType: 'json',
+            contentType: 'application/json',
+            success: function (result) {
+                alert(result)
+                if (result) {
+                    layer.close(newadd); //如果设定了yes回调，需进行手工关闭
+                    tablers.reload();
+                    layer.msg("添加成功！");
+                }
+                else {
+                    layer.msg("添加失败！");
+                }
+            }
+        });
+        return false;
+    });
+    //图片上传
+    var uploadInst = upload.render({
+        elem: '#img'
+        , url: "/HomePage/InsertPicture" //改成您自己的上传接口
+        , before: function (obj) {
+            //预读本地文件示例，不支持ie8
+            obj.preview(function (index, file, result) {
+                $('#demo1').attr('src', result); //图片链接（base64）
+            });
+        }
+        , acceptMime: 'image'
+        , done: function (res) {
+            //如果上传失败
+            if (res.code > 0) {
+                return layer.msg('上传失败');
+            }
+            //上传成功
+            layer.msg('上传成功');
+            $("[name=InsertApply_Img]").val(res.path);
+        }
+        , error: function () {
+            //演示失败状态，并实现重传
+            var demoText = $('#demoText');
+            demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-xs demo-reload">重试</a>');
+            demoText.find('.demo-reload').on('click', function () {
+                uploadInst.upload();
+            });
+        }
+    });
+    //日期戳格式化
+    function dateToStr(dates) {
+        var lw = new Date(dates);
+        var lastY = lw.getFullYear();
+        var lastM = lw.getMonth() + 1;
+        var lastD = lw.getDate();
+        var lastH = lw.getHours();
+        var lastF = lw.getMinutes();
+        var lastS = lw.getSeconds();
+        var startdate = lastY + "-" + (lastM < 10 ? "0" + lastM : lastM) + "-" + (lastD < 10 ? "0" + lastD : lastD) + " " + (lastH < 10 ? "0" + lastH : lastH) + ":" + (lastF < 10 ? "0" + lastF : lastF) + ":" + (lastS < 10 ? "0" + lastS : lastS);
+        return startdate;
+    }
+</script>
+<script type="text/html" id="imgtmp">
+    <img src="{{d.insertApply_Img}}" width="200" height="100">
+</script>
+<script>
+    // 上传图片鼠标移上事件
+    $(document).ready(function () {
+        $("#img").mouseover(function () {
+            $("#img").css("border-color", "#0079fe");
+            $("#img p").css("color", "#0079fe");
+        });
+        $("#img").mouseout(function () {
+            $("#img").css("border-color", "rgb(235,235,235)");
+            $("#img p").css("color", "rgb(182, 181, 181)");
+        });
+    });
+</script>
