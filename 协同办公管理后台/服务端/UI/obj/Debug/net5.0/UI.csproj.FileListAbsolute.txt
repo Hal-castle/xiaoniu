@@ -487,7 +487,6 @@ C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\UI\o
 C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\UI\obj\Debug\net5.0\UI.RazorTargetAssemblyInfo.cache
 C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\UI\obj\Debug\net5.0\UI.csproj.CopyComplete
 C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\UI\obj\Debug\net5.0\UI.genruntimeconfig.cache
-<<<<<<< HEAD
 C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI\obj\Debug\net5.0\UI.csprojAssemblyReference.cache
 C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI\obj\Debug\net5.0\UI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI\obj\Debug\net5.0\UI.AssemblyInfoInputs.cache
@@ -572,7 +571,6 @@ C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\U
 C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI\obj\Debug\net5.0\ref\UI.dll
 C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI\obj\Debug\net5.0\UI.pdb
 C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI\obj\Debug\net5.0\UI.genruntimeconfig.cache
-=======
 C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\UI\obj\Debug\net5.0\UI.csprojAssemblyReference.cache
 C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\UI\obj\Debug\net5.0\UI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\UI\obj\Debug\net5.0\UI.AssemblyInfoInputs.cache

@@ -223,3 +223,11 @@ Error Number:245,State:1,Class:16
 2021-02-28 20:33:34,043 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
 2021-02-28 20:33:34,050 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\UI
 >>>>>>> 437d8b7f70720f61d9a81f88c184282fde5f7e85
+2021-03-02 20:39:22,007 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-02 20:39:22,028 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-02 20:39:22,031 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-02 20:39:22,033 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-03-02 20:40:29,817 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-02 20:40:29,838 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-02 20:40:29,840 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-02 20:40:29,843 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI

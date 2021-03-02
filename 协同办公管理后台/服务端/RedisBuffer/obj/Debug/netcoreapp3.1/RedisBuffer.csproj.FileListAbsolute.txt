@@ -81,7 +81,6 @@ C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\Redi
 C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\RedisBuffer\obj\Debug\netcoreapp3.1\RedisBuffer.csproj.CopyComplete
 C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\RedisBuffer\obj\Debug\netcoreapp3.1\RedisBuffer.dll
 C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\RedisBuffer\obj\Debug\netcoreapp3.1\RedisBuffer.pdb
-<<<<<<< HEAD
 C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\RedisBuffer\bin\Debug\netcoreapp3.1\RedisBuffer.deps.json
 C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\RedisBuffer\bin\Debug\netcoreapp3.1\RedisBuffer.dll
 C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\RedisBuffer\bin\Debug\netcoreapp3.1\RedisBuffer.pdb
@@ -96,7 +95,6 @@ C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\R
 C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\RedisBuffer\obj\Debug\netcoreapp3.1\RedisBuffer.dll
 C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\RedisBuffer\obj\Debug\netcoreapp3.1\RedisBuffer.pdb
 C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\RedisBuffer\obj\Debug\netcoreapp3.1\RedisBuffer.csprojAssemblyReference.cache
-=======
 C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\RedisBuffer\bin\Debug\netcoreapp3.1\RedisBuffer.deps.json
 C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\RedisBuffer\bin\Debug\netcoreapp3.1\RedisBuffer.dll
 C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\RedisBuffer\bin\Debug\netcoreapp3.1\RedisBuffer.pdb
