@@ -48,6 +48,7 @@ namespace 客户端1.Controllers
         //接入应用
         public IActionResult Access_application()
         {
+            //权限
             //var result= Common.HttpHelper.GetApiResult("get", "api/ApplyManage/Get");
             //List<object> list = Newtonsoft.Json.JsonConvert.DeserializeObject<List<object>>(result);
             //ViewBag.List=list;
