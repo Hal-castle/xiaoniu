@@ -571,3 +571,11 @@ C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\UI\ob
 C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\UI\obj\Debug\net5.0\UI.RazorTargetAssemblyInfo.cache
 C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\UI\obj\Debug\net5.0\UI.csproj.CopyComplete
 C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\UI\obj\Debug\net5.0\UI.genruntimeconfig.cache
+C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\UI\bin\Debug\net5.0\IdentityModel.dll
+C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\UI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\UI\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\UI\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\UI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\UI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\UI\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\UI\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
