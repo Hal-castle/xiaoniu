@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F1MPQGt+h4M8W3deCJL8azv28hHtc+MQGfAd1Sd2SZjmpvKumtyTBlfTXF9B4QZoVfeTfvFN+GtgpuXrltMeng==",
+  "dgSpecHash": "PyDm8vLqebeBKof0u9e/h1eSkSUoSmO/jvLbVEwZJa8+QsQqfqFXj8PqXLd3OsMKL3XSwue1MiqQ37s13NkYhg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\客户端\\UI\\UI.csproj",
+  "projectFilePath": "C:\\Users\\liuwanting\\Desktop\\xm\\xiaoniu\\协同办公管理后台\\客户端\\UI\\UI.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "读取缓存文件 C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\客户端\\UI\\obj\\project.nuget.cache 时遇到问题: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qCjtTG6hLyWlnFPc/xp30FBSQrapbctcPQjUHWUjNeRbfZKNlZIhTYWwb2mFsqnnLkoZIRIGj5Vinxvsadh9Gw==",
+  "dgSpecHash": "8h039m7dmCZosFhjCxrtZA70HWE2iU/O0+XgGVTOhgpzKpZTmE0ibeoYcoU47H4ok76jQFKB495AdgOeXMnriA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\RedisBuffer\\RedisBuffer.csproj",
+  "projectFilePath": "C:\\Users\\liuwanting\\Desktop\\xm\\xiaoniu\\协同办公管理后台\\服务端\\RedisBuffer\\RedisBuffer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\liuwanting\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\liuwanting\\.nuget\\packages\\google.protobuf\\3.6.1\\google.protobuf.3.6.1.nupkg.sha512",

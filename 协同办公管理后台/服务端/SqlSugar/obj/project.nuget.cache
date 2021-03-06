@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KMLsy78hB8sorpII7Ep7E2sxBipkBbRhKMQuNJaSZg/c2LGvoFdQ1fjSbkXYZTWUODMjjkHnKdYgMT+iEkjRIA==",
+  "dgSpecHash": "MPp8+yafGq07EbA/qtdqx5Mfv+w9c2CdsdW7LGQldVdi20GNQkBKUVdcW54NKS4ZDEidr0L7f9yTsqTCVMGUbQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj",
+  "projectFilePath": "C:\\Users\\liuwanting\\Desktop\\xm\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\liuwanting\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\liuwanting\\.nuget\\packages\\google.protobuf\\3.6.1\\google.protobuf.3.6.1.nupkg.sha512",
