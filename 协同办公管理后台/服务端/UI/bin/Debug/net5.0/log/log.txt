@@ -1,169 +1,44 @@
-<<<<<<< HEAD
-2021-03-02 10:27:43,359 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
-2021-03-02 10:27:43,368 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
-2021-03-02 10:27:43,370 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
-2021-03-02 10:27:43,372 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
-2021-03-02 10:28:10,249 [19] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
-StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 9s ago, v: 2.2.4.27433
-   at StackExchange.Redis.ConnectionMultiplexer.ConnectImpl(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 1163
-   at StackExchange.Redis.ConnectionMultiplexer.Connect(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 1032
-   at StackExchange.Redis.ConnectionMultiplexer.Connect(String configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 1015
-   at RedisBuffer.RedisHelper..ctor() in C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\RedisBuffer\RedisHelper.cs:line 36
-   at RedisBuffer.DataSources.GetData[T](UnitOfWork ff, Boolean iss) in C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\RedisBuffer\DataSources.cs:line 33
-   at UI.Controllers.ApplyManageController.Get(Int32 page, Int32 limit, Int32 apptype, Int32 status, String Name) in C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI\Controllers\ApplyManageController.cs:line 31
-   at lambda_method3(Closure , Object , Object[] )
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
---- End of stack trace from previous location ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
-   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-2021-03-02 10:49:13,433 [19] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
-StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 0s ago, v: 2.2.4.27433
-   at StackExchange.Redis.ConnectionMultiplexer.ConnectImpl(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 1180
-   at RedisBuffer.RedisHelper..ctor() in C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\RedisBuffer\RedisHelper.cs:line 36
-   at RedisBuffer.DataSources.GetData[T](UnitOfWork ff, Boolean iss) in C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\RedisBuffer\DataSources.cs:line 33
-   at UI.Controllers.ApplyManageController.Get(Int32 page, Int32 limit, Int32 apptype, Int32 status, String Name) in C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI\Controllers\ApplyManageController.cs:line 31
-   at lambda_method3(Closure , Object , Object[] )
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
---- End of stack trace from previous location ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
-   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-2021-03-02 14:08:17,922 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
-2021-03-02 14:08:17,939 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
-2021-03-02 14:08:17,942 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
-2021-03-02 14:08:17,945 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
-2021-03-02 14:48:10,142 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
-2021-03-02 14:48:10,162 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
-2021-03-02 14:48:10,164 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
-2021-03-02 14:48:10,166 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
-2021-03-02 15:00:53,278 [49] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
-System.Data.SqlClient.SqlException (0x80131904): 在将 varchar 值 'undefined' 转换成数据类型 int 时失败。
-   at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
-   at SqlSugar.DeleteableProvider`1.ExecuteCommand()
-   at SqlSugar.DbContext`1.Delete(Object[] ids) in C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\SqlSugar\DbContext.cs:line 138
-   at UI.Controllers.ApplyManageController.DelAppArrange(String Ids) in C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI\Controllers\ApplyManageController.cs:line 88
-   at lambda_method36(Closure , Object , Object[] )
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
---- End of stack trace from previous location ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
-   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-ClientConnectionId:239aa49b-6ab7-42e7-9450-61762ea68c2d
-Error Number:245,State:1,Class:16
-2021-03-02 15:02:38,350 [104] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
-System.Data.SqlClient.SqlException (0x80131904): 在将 varchar 值 'undefined' 转换成数据类型 int 时失败。
-   at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
-   at SqlSugar.DeleteableProvider`1.ExecuteCommand()
-   at SqlSugar.DbContext`1.Delete(Object[] ids) in C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\SqlSugar\DbContext.cs:line 138
-   at UI.Controllers.ApplyManageController.DelAppArrange(String Ids) in C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI\Controllers\ApplyManageController.cs:line 88
-   at lambda_method36(Closure , Object , Object[] )
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
---- End of stack trace from previous location ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
-   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-ClientConnectionId:239aa49b-6ab7-42e7-9450-61762ea68c2d
-Error Number:245,State:1,Class:16
-2021-03-02 15:04:47,892 [93] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
-System.Data.SqlClient.SqlException (0x80131904): 在将 varchar 值 'undefined' 转换成数据类型 int 时失败。
-   at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
-   at SqlSugar.DeleteableProvider`1.ExecuteCommand()
-   at SqlSugar.DbContext`1.Delete(Object[] ids) in C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\SqlSugar\DbContext.cs:line 138
-   at UI.Controllers.ApplyManageController.DelAppArrange(String Ids) in C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI\Controllers\ApplyManageController.cs:line 88
-   at lambda_method36(Closure , Object , Object[] )
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
---- End of stack trace from previous location ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
-   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-ClientConnectionId:239aa49b-6ab7-42e7-9450-61762ea68c2d
-Error Number:245,State:1,Class:16
-2021-03-02 15:12:27,967 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
-2021-03-02 15:12:27,987 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
-2021-03-02 15:12:27,990 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
-2021-03-02 15:12:27,993 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
-2021-03-02 15:58:17,052 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
-2021-03-02 15:58:17,070 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
-2021-03-02 15:58:17,073 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
-2021-03-02 15:58:17,075 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
-2021-03-02 15:59:16,667 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
-2021-03-02 15:59:16,685 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
-2021-03-02 15:59:16,687 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
-2021-03-02 15:59:16,689 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
-2021-03-02 16:02:44,331 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
-2021-03-02 16:02:44,355 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
-2021-03-02 16:02:44,360 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
-2021-03-02 16:02:44,365 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
-2021-03-02 16:04:52,940 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
-2021-03-02 16:04:52,961 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
-2021-03-02 16:04:52,964 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
-2021-03-02 16:04:52,966 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
-2021-03-02 16:07:20,437 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
-2021-03-02 16:07:20,456 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
-2021-03-02 16:07:20,458 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
-2021-03-02 16:07:20,460 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
-2021-03-02 16:52:12,282 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
-2021-03-02 16:52:12,307 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
-2021-03-02 16:52:12,310 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
-2021-03-02 16:52:12,313 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
-2021-03-02 16:56:17,694 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
-2021-03-02 16:56:17,713 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
-2021-03-02 16:56:17,716 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
-2021-03-02 16:56:17,718 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
-2021-03-02 16:56:49,686 [18] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
-System.Exception: Developers 创建失败,请认真检查 1、属性需要get set 2、特殊类型需要加Ignore 具体错误内容： 数据库中已存在名为 'Developers' 的对象。
+2021-03-05 17:09:56,457 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-05 17:09:56,476 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-05 17:09:56,480 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-05 17:09:56,485 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-03-05 17:14:20,397 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-05 17:14:20,422 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-05 17:14:20,425 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-05 17:14:20,428 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-03-05 17:16:23,515 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-05 17:16:23,534 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-05 17:16:23,536 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-05 17:16:23,539 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-03-05 19:26:22,539 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-05 19:26:22,570 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-05 19:26:22,574 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-05 19:26:22,579 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-03-05 19:28:09,355 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-05 19:28:09,385 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-05 19:28:09,389 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-05 19:28:09,392 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-03-05 19:29:26,838 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-05 19:29:26,859 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-05 19:29:26,862 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-05 19:29:26,865 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-03-05 19:29:59,126 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-05 19:29:59,152 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-05 19:29:59,157 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-05 19:29:59,160 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-03-05 19:32:32,899 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-05 19:32:32,917 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-05 19:32:32,919 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-05 19:32:32,922 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-03-05 19:33:08,930 [4] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.Exception: Power 创建失败,请认真检查 1、属性需要get set 2、特殊类型需要加Ignore 具体错误内容： Object reference not set to an instance of an object.
    at SqlSugar.CodeFirstProvider.InitTables(Type[] entityTypes)
    at SqlSugar.DbContext`1.CreateTable(Boolean Backup, Int32 StringDefaultLength, Type[] types) in C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\SqlSugar\DbContext.cs:line 44
    at SqlSugar.DbContext`1..ctor() in C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\SqlSugar\DbContext.cs:line 32
    at SqlSugar.UnitOfWork.db[T]() in C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\SqlSugar\UnitOfWork.cs:line 11
-   at UI.Controllers.ValuesController.Del(Int32 Id) in C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI\Controllers\ValuesController.cs:line 48
-   at lambda_method4(Closure , Object , Object[] )
+   at RedisBuffer.DataSources.GetData[T](UnitOfWork ff, Boolean iss) in C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\RedisBuffer\DataSources.cs:line 27
+   at UI.Controllers.ApplyManageController.Add(InsertApply app) in C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI\Controllers\ApplyManageController.cs:line 62
+   at lambda_method19(Closure , Object , Object[] )
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
@@ -178,28 +53,31 @@ System.Exception: Developers 创建失败,请认真检查 1、属性需要get se
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-2021-03-02 17:20:10,195 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
-2021-03-02 17:20:10,225 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
-2021-03-02 17:20:10,229 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
-2021-03-02 17:20:10,232 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
-2021-03-02 18:21:27,494 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
-2021-03-02 18:21:27,510 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
-2021-03-02 18:21:27,514 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
-2021-03-02 18:21:27,522 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
-2021-03-02 19:34:52,710 [147] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
-System.Data.SqlClient.SqlException (0x80131904): 在将 varchar 值 'undefined' 转换成数据类型 int 时失败。
-   at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
-   at SqlSugar.DeleteableProvider`1.ExecuteCommand()
-   at SqlSugar.DbContext`1.Delete(Object[] ids) in C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\SqlSugar\DbContext.cs:line 138
-   at UI.Controllers.ApplyManageController.DelDevelopers(String Ids) in C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI\Controllers\ApplyManageController.cs:line 133
-   at lambda_method75(Closure , Object , Object[] )
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+2021-03-05 19:35:51,720 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-05 19:35:51,739 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-05 19:35:51,741 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-05 19:35:51,743 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-03-05 19:36:50,628 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-05 19:36:50,652 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-05 19:36:50,655 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-05 19:36:50,659 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-03-05 19:39:53,578 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-05 19:39:53,600 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-05 19:39:53,603 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-05 19:39:53,606 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-03-05 19:41:28,589 [53] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Unexpected end of request content.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelBadHttpRequestException.Throw(RequestRejectionReason reason)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1ContentLengthMessageBody.ReadAsyncInternal(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream.ReadAsyncInternal(Memory`1 destination, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.ReadAsync[TValue](Stream utf8Json, Type returnType, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
 --- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
    at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
@@ -207,27 +85,27 @@ System.Data.SqlClient.SqlException (0x80131904): 在将 varchar 值 'undefined' 
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-ClientConnectionId:312d91fc-43dc-4609-a18a-3ed53f1c0535
-Error Number:245,State:1,Class:16
-=======
-2021-02-28 20:25:25,391 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
-2021-02-28 20:25:25,417 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
-2021-02-28 20:25:25,423 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
-2021-02-28 20:25:25,430 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\UI
-2021-02-28 20:28:40,171 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
-2021-02-28 20:28:40,211 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
-2021-02-28 20:28:40,217 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
-2021-02-28 20:28:40,245 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\UI
-2021-02-28 20:33:33,975 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
-2021-02-28 20:33:34,034 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
-2021-02-28 20:33:34,043 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
-2021-02-28 20:33:34,050 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\UI
->>>>>>> 437d8b7f70720f61d9a81f88c184282fde5f7e85
-2021-03-02 20:39:22,007 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
-2021-03-02 20:39:22,028 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
-2021-03-02 20:39:22,031 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
-2021-03-02 20:39:22,033 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
-2021-03-02 20:40:29,817 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
-2021-03-02 20:40:29,838 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
-2021-03-02 20:40:29,840 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
-2021-03-02 20:40:29,843 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-03-05 19:50:11,323 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-05 19:50:11,346 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-05 19:50:11,348 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-05 19:50:11,352 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-03-05 19:52:32,346 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-05 19:52:32,367 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-05 19:52:32,369 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-05 19:52:32,372 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-03-05 19:53:20,846 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-05 19:53:20,865 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-05 19:53:20,868 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-05 19:53:20,870 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-03-05 19:54:08,848 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-05 19:54:08,913 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-05 19:54:08,916 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-05 19:54:08,918 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-03-05 19:56:17,100 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-05 19:56:17,125 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-05 19:56:17,128 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-05 19:56:17,158 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-03-05 20:00:16,460 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-05 20:00:16,480 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-05 20:00:16,484 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-05 20:00:16,487 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
