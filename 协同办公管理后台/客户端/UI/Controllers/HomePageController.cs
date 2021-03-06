@@ -3,27 +3,17 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using UI;
 
 namespace 客户端1.Controllers
 {
-    //使用过滤器
-    [MyActionFilter]
     public class HomePageController : Controller
     {
         //主界面
-        
         public IActionResult Index()
         {
-            //登入后保存sesscion
-            HttpContext.Session.SetString("Use", "123");
             return View();
         }
-        public IActionResult Index1()
-        {
-            return View();
-        }
+
 
         //单位人事
         //单位管理
@@ -46,7 +36,7 @@ namespace 客户端1.Controllers
         {
             return View();
         }
-        //岗位管理 
+        //岗位管理
         public IActionResult Post_management()
         {
             return View();
