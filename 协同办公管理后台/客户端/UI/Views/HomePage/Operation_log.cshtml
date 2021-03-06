@@ -3,4 +3,238 @@
 *@
 @{
 }
-操作日志
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="~/layui/css/layui.css" rel="stylesheet" />
+    <script src="~/js/jquery-3.3.1.js"></script>
+    <style>
+        h3 {
+            border-color: #0079fe;
+            border-left-style: solid;
+            padding-left: 7px;
+            border-width: 5px;
+            margin-right: 20px;
+            font-weight: 500;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #query {
+            margin-left: 20px;
+            background-color: greenyellow;
+            width: 90%;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+
+            #query :nth-child(1) {
+                margin-left: 20px;
+            }
+
+        #qw {
+            width: 20%;
+            float: right;
+            margin-top: 50px;
+        }
+
+        #er {
+            width: 80%;
+        }
+
+        #q {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 99px;
+            height: 29px;
+            background-color: transparent;
+            font-family: 'ArialMT', 'Arial';
+            font-weight: 400;
+            font-style: normal;
+            font-size: 13px;
+            text-decoration: none;
+            color: #000000;
+            text-align: left;
+            border-color: transparent;
+            outline-style: none;
+        }
+
+        #w {
+            border-width: 0px;
+            position: absolute;
+            left: 100px;
+            top: 10px;
+            width: 213px;
+            word-wrap: break-word;
+        }
+
+        #e {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 99px;
+            height: 29px;
+            background-color: transparent;
+            font-family: 'ArialMT', 'Arial';
+            font-weight: 400;
+            font-style: normal;
+            font-size: 13px;
+            text-decoration: none;
+            color: #000000;
+            text-align: left;
+            margin-left: 105px;
+            border-color: transparent;
+            outline-style: none;
+        }
+
+        #r {
+            width: 217px;
+            height: 36px;
+            background-color: rgba(255, 255, 255, 1);
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgba(242, 242, 242, 1);
+            border-radius: 6px;
+            position: absolute;
+            left: 85px;
+            top: 18px;
+        }
+    </style>
+</head>
+<body style="background-color: #f5f6f9;">
+    <div style="margin-left: 20px;">
+        <h3>操作日志</h3>
+    </div>
+    <div id="query" style="background-color:#ffffff">
+        <div class="layui-input-inline">
+            <label>时间范围</label>
+            <div id="r">
+                <input class="f" id="q" placeholder="开始时间" type="text">
+                <div id="w">
+                    <span>-</span>
+                </div>
+                <input class="f" id="e" placeholder="      结束时间" type="text">
+            </div>
+            <label style="margin-left: 250px;">操作类型</label>
+            <select style="margin-right: 20px;" id="type">
+                <option value="0">用户信息轨迹</option>
+                <option value="1">HTML5</option>
+                <option value="2">小程序</option>
+                <option value="3">Web应用</option>
+            </select>
+            <label>操作应用</label>
+            <select style="margin-right: 20px;" id="status">
+                <option value="2">协同办公管理后台</option>
+                <option value="0">未上线</option>
+                <option value="1">已上线</option>
+            </select>
+            <label>输入查询</label>
+            <input type="text" style="display: inline;width: 200px;margin-top: 16px;" lay-verify="required" id="name"
+                   placeholder="🔍	输入操作者操作内容" class="layui-input">
+        </div>
+        <div id="qw">
+            <button type="button" class="layui-btn">查询</button>
+            <button type="button" class="layui-btn">重置</button>
+            <button type="button" class="layui-btn">导出</button>
+        </div>
+    </div>
+    <div id="er" style="margin-left: 20px;width: 90%;height:700px;background-color:#ffffff">
+        <table class="layui-hide" id="test" style="text-align:center;margin: 0 auto;"></table>
+    </div>
+</body>
+</html>
+<script src="~/layui/layui.all.js"></script>
+<script>
+	var table = layui.table;
+	var layer = layui.layer;
+	var form = layui.form;
+	var laydate = layui.laydate;
+	//日期范围
+	laydate.render({
+	  elem: '#e'
+	  ,type: 'datetime'
+	});
+	laydate.render({
+	  elem: '#q'
+	  ,type: 'datetime'
+	});
+	//表格加载
+	var tablers = table.render({
+		elem: '#test',
+		limit: 3,
+		limits: [3, 6, 9],
+		contentType: "application/x-www-form-urlencoded",
+		url: "http://localhost:5000/api/ApplyManage/getULog",
+		page: true //开启分页
+			,
+		cols: [
+			[ //表头
+				{
+					field: 'utimes',
+					title: '最后修改时间',
+					templet: function(d) {
+						return dateToStr(d.utimes);
+					}
+				}, {
+					field: 'uname',
+					title: '操作者'
+				}, {
+					field: 'uapply',
+					title: '操作应用'
+				}, {
+					field: 'utype',
+					title: '操作类型'
+				}, {
+					field: 'ucontent',
+					title: '操作内容',
+					}
+
+			]
+		]
+	});
+	//查询
+	$("#qw").children().eq(0).click(function() {
+		//这里以搜索为例
+		tablers.reload({
+			where: {
+				apptype: $("#type").val(), //JSON.stringify(),
+				status: $("#status").val(),
+				Name: $("#name").val(),
+				begin:$("#q").val(),
+				end:$("#e").val()
+			}
+			//,dataType: 'json'
+			//,contentType: 'application/json'
+			,
+			page: {
+				curr: 1 //重新从第 1 页开始
+			}
+		});
+	})
+	//重置
+	$("#qw").children().eq(1).click(function() {
+		 $("#type").val(0) //JSON.stringify(),
+		$("#status").val(2)
+		$("#name").val(null)
+		$("#q").val(null)
+		$("#e").val(null)
+		tablers.reload();
+	})
+	//日期戳格式化
+	function dateToStr(dates) {
+		var lw = new Date(dates);
+		var lastY = lw.getFullYear();
+		var lastM = lw.getMonth() + 1;
+		var lastD = lw.getDate();
+		var lastH = lw.getHours();
+		var lastF = lw.getMinutes();
+		var lastS = lw.getSeconds();
+		var startdate = lastY + "-" + (lastM < 10 ? "0" + lastM : lastM) + "-" + (lastD < 10 ? "0" + lastD : lastD) + " " + (
+			lastH < 10 ? "0" + lastH : lastH) + ":" + (lastF < 10 ? "0" + lastF : lastF) + ":" + (lastS < 10 ? "0" + lastS :
+			lastS);
+		return startdate;
+	}
+</script>

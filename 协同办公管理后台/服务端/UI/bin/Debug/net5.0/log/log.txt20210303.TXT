@@ -1,0 +1,32 @@
+2021-03-03 09:46:25,347 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-03 09:46:25,363 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-03 09:46:25,365 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-03 09:46:25,366 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-03-03 14:06:30,474 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-03 14:06:30,502 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-03 14:06:30,505 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-03 14:06:30,508 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-03-03 14:13:06,941 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-03 14:13:06,959 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-03 14:13:06,962 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-03 14:13:06,965 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-03-03 18:33:03,683 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-03 18:33:03,701 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-03 18:33:03,704 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-03 18:33:03,706 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-03-03 18:42:57,875 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-03 18:42:57,894 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-03 18:42:57,897 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-03 18:42:57,899 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-03-03 20:30:58,536 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-03 20:30:58,558 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-03 20:30:58,561 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-03 20:30:58,564 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-03-03 20:36:42,277 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-03 20:36:42,297 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-03 20:36:42,300 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-03 20:36:42,303 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-03-03 20:40:56,168 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-03-03 20:40:56,186 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-03-03 20:40:56,189 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-03-03 20:40:56,192 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI

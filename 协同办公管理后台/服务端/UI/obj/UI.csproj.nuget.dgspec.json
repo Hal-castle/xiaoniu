@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\UI\\UI.csproj": {}
+    "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\UI\\UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj": {
+    "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\liuwanting\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\Model\\obj\\",
+        "projectPath": "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\29462\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\Model\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\liuwanting\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\29462\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,17 +67,20 @@
         }
       }
     },
-    "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\RedisBuffer\\RedisBuffer.csproj": {
+    "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\RedisBuffer\\RedisBuffer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\RedisBuffer\\RedisBuffer.csproj",
+        "projectUniqueName": "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\RedisBuffer\\RedisBuffer.csproj",
         "projectName": "RedisBuffer",
-        "projectPath": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\RedisBuffer\\RedisBuffer.csproj",
-        "packagesPath": "C:\\Users\\liuwanting\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\RedisBuffer\\obj\\",
+        "projectPath": "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\RedisBuffer\\RedisBuffer.csproj",
+        "packagesPath": "C:\\Users\\29462\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\RedisBuffer\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\liuwanting\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\29462\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -88,11 +94,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj"
+              "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj"
               },
-              "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj": {
-                "projectPath": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj"
+              "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj": {
+                "projectPath": "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj"
               }
             }
           }
@@ -135,17 +141,20 @@
         }
       }
     },
-    "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj": {
+    "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj",
+        "projectUniqueName": "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj",
         "projectName": "SqlSugarFrame",
-        "projectPath": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj",
-        "packagesPath": "C:\\Users\\liuwanting\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\obj\\",
+        "projectPath": "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj",
+        "packagesPath": "C:\\Users\\29462\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\liuwanting\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\29462\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -159,8 +168,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj"
+              "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj"
               }
             }
           }
@@ -207,17 +216,20 @@
         }
       }
     },
-    "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\UI\\UI.csproj": {
+    "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\UI\\UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\UI\\UI.csproj",
+        "projectUniqueName": "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\UI\\UI.csproj",
         "projectName": "UI",
-        "projectPath": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\UI\\UI.csproj",
-        "packagesPath": "C:\\Users\\liuwanting\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\UI\\obj\\",
+        "projectPath": "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\UI\\UI.csproj",
+        "packagesPath": "C:\\Users\\29462\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\UI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\liuwanting\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\29462\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -231,14 +243,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj"
+              "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj"
               },
-              "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\RedisBuffer\\RedisBuffer.csproj": {
-                "projectPath": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\RedisBuffer\\RedisBuffer.csproj"
+              "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\RedisBuffer\\RedisBuffer.csproj": {
+                "projectPath": "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\RedisBuffer\\RedisBuffer.csproj"
               },
-              "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj": {
-                "projectPath": "C:\\Users\\liuwanting\\Desktop\\123\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj"
+              "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj": {
+                "projectPath": "C:\\Users\\29462\\Desktop\\奋进小组\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj"
               }
             }
           }

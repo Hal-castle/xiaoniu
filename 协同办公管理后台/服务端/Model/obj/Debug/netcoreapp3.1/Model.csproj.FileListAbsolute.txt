@@ -56,6 +56,15 @@ C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\Mode
 C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\Model\obj\Debug\netcoreapp3.1\Model.csproj.CoreCompileInputs.cache
 C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\Model\obj\Debug\netcoreapp3.1\Model.dll
 C:\Users\admin\桌面\协调管理系统\协同办公管理后台\服务端\Model\obj\Debug\netcoreapp3.1\Model.pdb
+C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\Model\bin\Debug\netcoreapp3.1\Model.deps.json
+C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\Model\bin\Debug\netcoreapp3.1\Model.dll
+C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\Model\bin\Debug\netcoreapp3.1\Model.pdb
+C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\Model\obj\Debug\netcoreapp3.1\Model.csprojAssemblyReference.cache
+C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfoInputs.cache
+C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfo.cs
+C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\Model\obj\Debug\netcoreapp3.1\Model.csproj.CoreCompileInputs.cache
+C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\Model\obj\Debug\netcoreapp3.1\Model.dll
+C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\Model\obj\Debug\netcoreapp3.1\Model.pdb
 C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\Model\obj\Debug\netcoreapp3.1\Model.csprojAssemblyReference.cache
 C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfoInputs.cache
 C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfo.cs
@@ -65,3 +74,4 @@ C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\Model
 C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\Model\bin\Debug\netcoreapp3.1\Model.deps.json
 C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\Model\bin\Debug\netcoreapp3.1\Model.dll
 C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\Model\bin\Debug\netcoreapp3.1\Model.pdb
+>>>>>>> 437d8b7f70720f61d9a81f88c184282fde5f7e85

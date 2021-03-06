@@ -1,0 +1,85 @@
+2021-02-28 18:33:14,139 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-02-28 18:33:14,162 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-02-28 18:33:14,165 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-02-28 18:33:14,168 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-02-28 19:28:45,776 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-02-28 19:28:45,794 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-02-28 19:28:45,797 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-02-28 19:28:45,799 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-02-28 19:35:42,437 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-02-28 19:35:42,455 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-02-28 19:35:42,457 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-02-28 19:35:42,460 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-02-28 20:00:44,438 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-02-28 20:00:44,458 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-02-28 20:00:44,461 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-02-28 20:00:44,465 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-02-28 20:03:24,955 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-02-28 20:03:24,974 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-02-28 20:03:24,977 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-02-28 20:03:24,979 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-02-28 20:05:53,061 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-02-28 20:05:53,077 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-02-28 20:05:53,079 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-02-28 20:05:53,081 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-02-28 20:08:50,398 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-02-28 20:08:50,440 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-02-28 20:08:50,443 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-02-28 20:08:50,445 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-02-28 20:23:34,128 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-02-28 20:23:34,146 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-02-28 20:23:34,149 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-02-28 20:23:34,151 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-02-28 20:29:07,403 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-02-28 20:29:07,460 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-02-28 20:29:07,463 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-02-28 20:29:07,467 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-02-28 20:29:40,420 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-02-28 20:29:40,437 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-02-28 20:29:40,439 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-02-28 20:29:40,441 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-02-28 20:29:49,000 [20] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): 不能将值 NULL 插入列 'InsertApply_Img'，表 'OfficeManagement.dbo.InsertApply'；列不允许有 Null 值。INSERT 失败。
+语句已终止。
+   at SqlSugar.AdoProvider.ExecuteCommand(String sql, SugarParameter[] parameters)
+   at SqlSugar.InsertableProvider`1.ExecuteCommand()
+   at SqlSugar.SimpleClient`1.Insert(T insertObj)
+   at SqlSugar.DbContext`1.Insert(T obj) in C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\SqlSugar\DbContext.cs:line 178
+   at UI.Controllers.ApplyManageController.Add(InsertApply app) in C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI\Controllers\ApplyManageController.cs:line 61
+   at lambda_method3(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:dedbc67f-62ac-44ce-85a9-913cb67c8760
+Error Number:515,State:2,Class:16
+2021-02-28 20:30:21,459 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-02-28 20:30:21,478 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-02-28 20:30:21,481 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-02-28 20:30:21,483 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-02-28 20:33:32,931 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-02-28 20:33:32,950 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-02-28 20:33:32,952 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-02-28 20:33:32,954 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-02-28 20:47:11,520 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-02-28 20:47:11,538 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-02-28 20:47:11,540 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-02-28 20:47:11,543 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-02-28 20:47:56,921 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-02-28 20:47:56,938 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-02-28 20:47:56,940 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-02-28 20:47:56,943 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
+2021-02-28 20:51:11,339 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2021-02-28 20:51:11,358 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2021-02-28 20:51:11,360 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2021-02-28 20:51:11,362 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\Users\29462\Desktop\奋进小组\xiaoniu\协同办公管理后台\服务端\UI
