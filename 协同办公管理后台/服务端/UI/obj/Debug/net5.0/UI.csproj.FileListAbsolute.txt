@@ -656,3 +656,13 @@ C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\UI\ob
 C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\UI\obj\Debug\net5.0\UI.csproj.CopyComplete
 C:\Users\liuwanting\Desktop\123\xiaoniu\协同办公管理后台\服务端\UI\obj\Debug\net5.0\UI.genruntimeconfig.cache
 >>>>>>> 437d8b7f70720f61d9a81f88c184282fde5f7e85
+C:\Users\liuwanting\Desktop\呵呵\xiaoniu\协同办公管理后台\服务端\UI\obj\Debug\net5.0\UI.csprojAssemblyReference.cache
+C:\Users\liuwanting\Desktop\呵呵\xiaoniu\协同办公管理后台\服务端\UI\obj\Debug\net5.0\UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\liuwanting\Desktop\呵呵\xiaoniu\协同办公管理后台\服务端\UI\obj\Debug\net5.0\UI.AssemblyInfoInputs.cache
+C:\Users\liuwanting\Desktop\呵呵\xiaoniu\协同办公管理后台\服务端\UI\obj\Debug\net5.0\UI.AssemblyInfo.cs
+C:\Users\liuwanting\Desktop\呵呵\xiaoniu\协同办公管理后台\服务端\UI\obj\Debug\net5.0\UI.csproj.CoreCompileInputs.cache
+C:\Users\liuwanting\Desktop\呵呵\xiaoniu\协同办公管理后台\服务端\UI\obj\Debug\net5.0\UI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\liuwanting\Desktop\呵呵\xiaoniu\协同办公管理后台\服务端\UI\obj\Debug\net5.0\UI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\liuwanting\Desktop\呵呵\xiaoniu\协同办公管理后台\服务端\UI\obj\Debug\net5.0\UI.dll
+C:\Users\liuwanting\Desktop\呵呵\xiaoniu\协同办公管理后台\服务端\UI\obj\Debug\net5.0\ref\UI.dll
+C:\Users\liuwanting\Desktop\呵呵\xiaoniu\协同办公管理后台\服务端\UI\obj\Debug\net5.0\UI.pdb
