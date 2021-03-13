@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PoGdPaOrvysUibWnvB3g/278d1lFYwN/sD1j3sW7yNUDfMIWZORzfVYCBxHBMEvd1TBvi4+/n8kGaKGGZzEEFg==",
+  "dgSpecHash": "igwP2Um1lTiiAl9LKaXXJO6kDeapbIcdBfcWn7/8jUjaPwQDK/SehzBVJiaFkMHTxCJr5RmZcw8dOJGtVFfs6w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\liuwanting\\Desktop\\呵呵\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj",
+  "projectFilePath": "C:\\Users\\liuwanting\\Desktop\\ds\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\liuwanting\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\liuwanting\\.nuget\\packages\\google.protobuf\\3.6.1\\google.protobuf.3.6.1.nupkg.sha512",

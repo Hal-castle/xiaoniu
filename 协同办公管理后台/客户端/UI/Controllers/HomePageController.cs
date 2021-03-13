@@ -1,23 +1,92 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
+﻿using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Net.Http;
-using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using UI;
+using System.Net;
+using System.IO;
+using System.Text;
 
 namespace 客户端1.Controllers
 {
     public class HomePageController : Controller
     {
         //主界面
+
+        public static string PostUrl = "http://106.ihuyi.cn/webservice/sms.php?method=Submit";
+        [HttpPost]
+        public IActionResult Yzm(string Phone)
+        {
+            string account = "C81436469";//用户名是登录用户中心->验证码、通知短信->帐户及签名设置->APIID
+            string password = "a1b769cab5ae6b8bf75393fb086c8b5c"; //密码是请登录用户中心->验证码、通知短信->帐户及签名设置->APIKEY
+
+            Random rad = new Random();
+            int mobile_code = rad.Next(1000, 10000);
+            string content = "您的验证码是：" + mobile_code + " 。请不要把验证码泄露给其他人。";
+
+            //Session["mobile"] = mobile;
+            //Session["mobile_code"] = mobile_code;
+
+            string postStrTpl = "account={0}&password={1}&mobile={2}&content={3}";
+
+            UTF8Encoding encoding = new UTF8Encoding();
+            byte[] postData = encoding.GetBytes(string.Format(postStrTpl, account, password, Phone, content));
+
+            HttpWebRequest myRequest = (HttpWebRequest)WebRequest.Create(PostUrl);
+            myRequest.Method = "POST";
+            myRequest.ContentType = "application/x-www-form-urlencoded";
+            myRequest.ContentLength = postData.Length;
+
+            Stream newStream = myRequest.GetRequestStream();
+            // Send the data.
+            newStream.Write(postData, 0, postData.Length);
+            newStream.Flush();
+            newStream.Close();
+
+            HttpWebResponse myResponse = (HttpWebResponse)myRequest.GetResponse();
+            if (myResponse.StatusCode == HttpStatusCode.OK)
+            {
+                StreamReader reader = new StreamReader(myResponse.GetResponseStream(), Encoding.UTF8);
+
+                //Response.Write(reader.ReadToEnd());
+
+                string res = reader.ReadToEnd();
+                int len1 = res.IndexOf("</code>");
+                int len2 = res.IndexOf("<code>");
+                string code = res.Substring((len2 + 6), (len1 - len2 - 6));
+                //Response.Write(code);
+
+                int len3 = res.IndexOf("</msg>");
+                int len4 = res.IndexOf("<msg>");
+                string msg = res.Substring((len4 + 5), (len3 - len4 - 5));
+
+                return Ok(mobile_code);
+            }
+            else
+            {
+                return Ok(0);
+            }
+        }
+        public IActionResult Login()
+        {
+            return View();
+        }
+        public IActionResult Registered()
+        {
+            return View();
+        }
+
         public IActionResult Index()
         {
             return View();
         }
+        public IActionResult Index1()
+        {
+            return View();
+        }
+
         //单位人事
         //单位管理
         public IActionResult Unit_management()
@@ -39,7 +108,7 @@ namespace 客户端1.Controllers
         {
             return View();
         }
-        //岗位管理
+        //岗位管理 
         public IActionResult Post_management()
         {
             return View();
@@ -48,41 +117,7 @@ namespace 客户端1.Controllers
         //接入应用
         public IActionResult Access_application()
         {
-            //权限
-            //var result= Common.HttpHelper.GetApiResult("get", "api/ApplyManage/Get");
-            //List<object> list = Newtonsoft.Json.JsonConvert.DeserializeObject<List<object>>(result);
-            //ViewBag.List=list;
             return View();
-        }
-        /// <summary>
-        /// 图片上传并存入数据库
-        /// </summary>
-        /// <returns></returns>
-        public object InsertPicture([FromForm] IFormCollection formData)
-        {
-            IFormFile uploadfile = formData.Files[0];
-            if (uploadfile != null)
-            {
-                //文件后缀
-                var fileExtension = Path.GetExtension(uploadfile.FileName);
-                var strDateTime = DateTime.Now.ToString("yyMMddhhmmssfff"); //取得时间字符串
-                var strRan = Convert.ToString(new Random().Next(100, 999)); //生成三位随机数
-                var saveName = strDateTime + strRan + fileExtension;
-                var path = "Img";
-                var di = ("/" + path + "/" + saveName);
-                var bi = Path.Combine("wwwroot",path);
-                if (!Directory.Exists(bi))
-                {
-                    Directory.CreateDirectory(bi);
-                }
-                using (FileStream fs = System.IO.File.Create(Path.Combine(bi, saveName)))
-                {
-                    uploadfile.CopyTo(fs);
-                    fs.Flush();
-                }
-                return new { code = 0, path = di };
-            }
-            return new { code = 1 };
         }
         //开发商管理
         public IActionResult Developer_Management()
@@ -131,6 +166,11 @@ namespace 客户端1.Controllers
         }
         //字典管理
         public IActionResult Dictionary_management()
+        {
+            return View();
+        }
+
+        public IActionResult Error()
         {
             return View();
         }

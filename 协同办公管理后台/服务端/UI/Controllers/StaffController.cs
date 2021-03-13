@@ -10,8 +10,12 @@ using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.Security.Claims;
+
+using Newtonsoft.Json;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Http;
+
 
 namespace UI.Controllers
 {
@@ -20,8 +24,9 @@ namespace UI.Controllers
 
     public class StaffController : ControllerBase
     {
-        private UnitOfWork ff = null;//SqlSugar框架的实体类
 
+        #region
+        private UnitOfWork ff = null;//SqlSugar框架的实体类
         private readonly IConfiguration _configuration;
         private readonly ILogger<StaffController> _logger;
 
@@ -31,30 +36,33 @@ namespace UI.Controllers
             _configuration = configuration;
             ff = new UnitOfWork();
         }
-
-        //登入
+        #endregion
+        //接口测试
+        #region
+        [Authorize]
+        [TokenFilter]
         [HttpGet]
-        public IActionResult staffIsExist(string Staff_Account, string Staff_Password)
+        public object All()
         {
-            var datas = DataSources.GetData<Staff>(ff, true) as IEnumerable<Staff>;
-
-            var queryMessage = datas.SingleOrDefault(item => item.Staff_Account == Staff_Account && item.Staff_Password == Staff_Password);
-            if (queryMessage != null)
-            {
-                var token = new JwtTokenUtil().GetToken(new Users()
-                {
-                    Name = queryMessage.Staff_Account,
-                    Pass = queryMessage.Staff_Password
-                });
-                var AllPowers = getRolesPowers(queryMessage.Staff_Id);
-                var apiUrl = (AllPowers as IEnumerable<Power>).Select(item => item.Paction);
-                new RedisHelper().Set(queryMessage.Staff_Id.ToString(), apiUrl, 10);
-                return Ok(new { token, AllPowers });
-            }
-            return BadRequest("用户名密码错误");
+            return new string[] { "张三", "李四" };
         }
 
-        //获取用户的角色
+        [Authorize]
+        [TokenFilter]
+        [HttpGet]
+        public object All1()
+        {
+            return new string[] { "呵呵", "你猜" };
+        }
+
+        public object Error()
+        {
+            return new {message = "无权访问" };
+        }
+        #endregion
+        //数据获取
+        #region
+        
         [NonAction]
         public IEnumerable<int> getStaffRoles(int staffId)
         {
@@ -67,7 +75,6 @@ namespace UI.Controllers
                 }
             }
         }
-
         [NonAction]
         public IEnumerable<int> getPowerIds(int[] roleIds)
         {
@@ -80,8 +87,6 @@ namespace UI.Controllers
                 }
             }
         }
-
-        //获取角色的权限
         [NonAction]
         public object getRolesPowers(int staffId)
         {
@@ -93,27 +98,57 @@ namespace UI.Controllers
             var data = DataSources.GetData<Power>(ff, true) as IEnumerable<Power>;
             IEnumerable<Power> Powers = data.Where(item => PowerIds.Contains(item.Pid));
             var datas = Powers.ToList();
-            return data;
+            return datas;
         }
+        #endregion
 
-        [Authorize]
-        [TokenFilter]
-        [HttpGet]
-        public object All()
+
+
+        //用户注册
+        public object Registered(Staff sta)
         {
-            return new string[] { "张三", "李四" };
+            return null;
         }
-
-        //系统过滤 验证token是否通过
-        [Authorize]
-        //自定义过滤 验证token权限
-        [TokenFilter]
-
-        [HttpGet]
-        public object All1()
+        //用户登入
+        public object Login(string LoginType, string Name = "",string Pass = "",int Phone = 0)
         {
-            return new string[] { "呵呵", "你猜" };
+            Staff data = null;
+            var allData = DataSources.GetData<Staff>(ff, true);
+            switch (LoginType)
+            {
+                case "Pass":
+                    data = allData.Where(item => item.Staff_Password == Pass).
+                               Where(item => item.Staff_Account == Name).SingleOrDefault();
+                    break;
+                case "Phone":
+                    data = allData.Where(item => item.Staff_Phone == Phone).SingleOrDefault();
+                    break;
+            }
+            if (data == null) return new { code = 1 };
+
+            string Token = new JwtTokenUtil().GetToken(data.Staff_Account, data.Staff_Password);
+
+            return new { code = 0, Token };
         }
 
+        //主界面加载信息
+        public object LoadPower()
+        {
+            string str = HttpContext.Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+            try
+            {
+                var Uncode = new JwtTokenUtil().UpToken(str);
+                Users use = JsonConvert.DeserializeObject<Users>(Uncode);
+                var uses = (DataSources.GetData<Staff>(ff) as IEnumerable<Staff>)
+                                .Where(item => item.Staff_Account == use.Name)
+                                .Where(item => item.Staff_Password == use.Pass)
+                                .SingleOrDefault();
+                var allPowers = getRolesPowers(uses.Staff_Id);
+                new RedisHelper().Set(uses.Staff_Id.ToString(), allPowers, 10);
+                return new { code = 0, allPowers };
+            }
+            catch { }
+            return new { code = 1 };
+        }
     }
 }

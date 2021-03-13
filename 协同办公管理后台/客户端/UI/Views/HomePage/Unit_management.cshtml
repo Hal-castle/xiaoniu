@@ -4,3 +4,28 @@
 @{
 }
 单位管理
+<script src="~/js/Filter.js"></script>
+<script src="~/js/jquery-3.3.1.js"></script>
+<script src="~/js/jquery.unobtrusive-ajax.js"></script>
+<script>
+    
+
+        $.ajax({
+            url: 'http://localhost:5000/api/Staff/All1',
+            type: 'get',
+            beforeSend: function (request) {
+                request.setRequestHeader("Authorization", 'Bearer ' + sessionStorage.getItem('token'));
+            },
+            success: function (data) {
+                //dosomething
+            },
+            error: function (xhr, textStatus, errorThrown) {
+                if (xhr.status=='404') {
+                    alert('无访问权限接口');
+                }
+                else {
+                    location.href= '/HomePage/Login'
+                }
+            }
+        })
+</script>

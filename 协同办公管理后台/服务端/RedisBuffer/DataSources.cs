@@ -22,6 +22,7 @@ namespace RedisBuffer
         {
             Type t = typeof(T);//获取传入的数据类型
             var Key = t.Name;//获取数据的名称
+           
             if (iss)//如果是对数据执行了操作，则将数据重新写入redis
             {
                 var a = ff.db<T>().GetList();

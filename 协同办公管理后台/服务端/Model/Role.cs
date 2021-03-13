@@ -5,6 +5,7 @@ using SqlSugar;
 namespace Model
 {
     //角色表
+    
     public class Role
     {
         [SugarColumn(IsPrimaryKey = true, IsIdentity = true)]//主键并且自增 （string不能设置自增）

@@ -9,9 +9,10 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
     <PackageReference Include="SqlSugarCore" Version="5.0.2.6" />
   </ItemGroup>
-
+	
+	
+	
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj" />
   </ItemGroup>
-
 </Project>

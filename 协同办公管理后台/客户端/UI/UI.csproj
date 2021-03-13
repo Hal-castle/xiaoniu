@@ -4,20 +4,4 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Content Remove="wwwroot\Img\210301024151292704.jpg" />
-    <Content Remove="wwwroot\Img\210301024512989105.jpeg" />
-    <Content Remove="wwwroot\Img\210301024516141391.jpeg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="wwwroot\Img\210301024151292704.jpg" />
-    <None Include="wwwroot\Img\210301024512989105.jpeg" />
-    <None Include="wwwroot\Img\210301024516141391.jpeg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-  </ItemGroup>
-
 </Project>

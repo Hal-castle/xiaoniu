@@ -1,8 +1,8 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
-@{
-}
+<script src="~/js/Filter.js"></script>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -392,29 +392,5 @@
 </script>
 
 <script>
-    function LoadPower() {
-        $.ajax({
-            url: 'http://localhost:5000/api/Staff/getRolesPowers?staffId=1&prevId=16',
-            type: 'get',
-            success: function (data) {
-                var AllName = [];
-                var obj = [{ pname: '管理表添加', btname: '#Addunit' }, { pname: '管理表删除', btname: '#Delteunit' }, { pname: '管理表修改', btname: '#Editunit' }]
-                for (var i = 0; i < data.length; i++) {
-                    AllName.push(data[i].pname);
-                }
-                for (var i = 0; i < obj.length; i++) {
-                    if (AllName.indexOf(obj[i].pname) == -1) {
-                        $(obj[i].btname).remove();
-                    }
-                }
-                if (AllName.indexOf('管理表数据') != -1) {
-                    loadData();
-                }
-            }
-        })
-    }
-    //加载数据表格
-    function loadData() {
-        alert('加载数据')
-    }
+    function LoadPower()
 </script>

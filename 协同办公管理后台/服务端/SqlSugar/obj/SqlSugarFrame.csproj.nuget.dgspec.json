@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\liuwanting\\Desktop\\呵呵\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj": {}
+    "C:\\Users\\liuwanting\\Desktop\\ds\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\liuwanting\\Desktop\\呵呵\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj": {
+    "C:\\Users\\liuwanting\\Desktop\\ds\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\liuwanting\\Desktop\\呵呵\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\liuwanting\\Desktop\\ds\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\liuwanting\\Desktop\\呵呵\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj",
+        "projectPath": "C:\\Users\\liuwanting\\Desktop\\ds\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj",
         "packagesPath": "C:\\Users\\liuwanting\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\liuwanting\\Desktop\\呵呵\\xiaoniu\\协同办公管理后台\\服务端\\Model\\obj\\",
+        "outputPath": "C:\\Users\\liuwanting\\Desktop\\ds\\xiaoniu\\协同办公管理后台\\服务端\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\liuwanting\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\Users\\liuwanting\\Desktop\\呵呵\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj": {
+    "C:\\Users\\liuwanting\\Desktop\\ds\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\liuwanting\\Desktop\\呵呵\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj",
+        "projectUniqueName": "C:\\Users\\liuwanting\\Desktop\\ds\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj",
         "projectName": "SqlSugarFrame",
-        "projectPath": "C:\\Users\\liuwanting\\Desktop\\呵呵\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj",
+        "projectPath": "C:\\Users\\liuwanting\\Desktop\\ds\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\SqlSugarFrame.csproj",
         "packagesPath": "C:\\Users\\liuwanting\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\liuwanting\\Desktop\\呵呵\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\obj\\",
+        "outputPath": "C:\\Users\\liuwanting\\Desktop\\ds\\xiaoniu\\协同办公管理后台\\服务端\\SqlSugar\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\liuwanting\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -88,8 +88,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\liuwanting\\Desktop\\呵呵\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\liuwanting\\Desktop\\呵呵\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj"
+              "C:\\Users\\liuwanting\\Desktop\\ds\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\liuwanting\\Desktop\\ds\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj"
               }
             }
           }

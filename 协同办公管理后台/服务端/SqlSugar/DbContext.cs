@@ -19,6 +19,7 @@ namespace SqlSugar
                        .SetBasePath(Directory.GetCurrentDirectory())
                        .AddJsonFile("appsettings.json", optional: true)
                        .Build();
+
         public DbContext()
         {
             Db = new SqlSugarClient(new ConnectionConfig()
@@ -29,9 +30,9 @@ namespace SqlSugar
                 IsAutoCloseConnection = true,//开启自动释放模式和EF原理一样我就不多解释了
 
             });
-            CreateTable(false, 50,typeof(ULog), typeof(Student), typeof(Units), typeof(InsertApply), typeof(AppArrange), typeof(Developers), typeof(Staff), typeof(Staff_Role), typeof(Role), typeof(Role_Power), typeof(Power));
+            
         }
-        private void CreateTable(bool Backup = false, int StringDefaultLength = 50, params Type[] types)
+        public void CreateTable(bool Backup = false, int StringDefaultLength = 50, params Type[] types)
         {
             Db.CodeFirst.SetStringDefaultLength(StringDefaultLength);
             Db.DbMaintenance.CreateDatabase();

@@ -3,6 +3,8 @@
 *@
 @{
 }
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,13 +13,20 @@
     <title></title>
     <link href="~/layui/css/layui.css" rel="stylesheet" />
 </head>
-<body class="layui-layout-body" onload="load()">
+<body class="layui-layout-body">
     <div class="layui-layout layui-layout-admin">
         <div class="layui-header">
             <div class="layui-logo">协同办公管理后台</div>
             <ul class="layui-nav layui-layout-right">
                 <li class="layui-nav-item">
-                    <i class="layui-icon layui-icon-logout" style="font-size: 30px;"></i>
+                    <a href="javascript:;">
+                        <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                        Admin
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">基本资料</a></dd>
+                        <dd><a href="">安全设置</a></dd>
+                    </dl>
                 </li>
                 <li class="layui-nav-item"><a href=""></a></li>
             </ul>
@@ -26,7 +35,6 @@
             <div class="layui-side-scroll">
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
                 <ul class="layui-nav layui-nav-tree" lay-filter="test" id="tittle">
-                  
                 </ul>
             </div>
         </div>
@@ -35,6 +43,66 @@
             <!-- 内容主体区域 -->
             <!--<div style="padding: 15px;">内容主体区域</div>-->
             <iframe style="width:100%;height:99.23%" name="management"></iframe>
+        </div>
+        <script src="~/js/jquery-3.3.1.js"></script>
+        <div class="layui-body">
+            <script>         
+                $.ajax({
+                    url: 'http://localhost:5000/api/Staff/LoadPower',
+                    type: 'post',
+                    beforeSend: function (request) {
+                        request.setRequestHeader("Authorization", 'Bearer ' + sessionStorage.getItem('token'));
+                    },
+                    success: function (data) {
+                        if (data.code == 1) {
+                            alert('请先登入')
+                            location.href = '/HomePage/Login';
+                        }
+                        load(data.allPowers);
+                    }
+                })
+
+                function load(data) {
+                    var urls = new Array;
+                    loadPower(data, urls);
+                    layui.use('element', function () {
+                        var element = layui.element;
+                        element.init();
+                    });
+                    sessionStorage.setItem('Power', urls);
+                }
+
+                function loadPower(data, urls) {
+                    for (var i = 0; i < data.length; i++) {
+                        if (data[i].pprev_authority == 0) {
+                            var str = '';
+                            str += ' <li class="layui-nav-item layui-nav-itemed">'
+                            str += ' <a class="" href="javascript:;">' + data[i].pname + '</a>'
+                            str += ' <dl class="layui-nav-child">'
+                            str += loadNextPower(data[i].pid, data, urls);
+                            str += ' </dl>'
+                            str += ' </li>'
+                            str.replace('<dl class="layui-nav-child"></dl>', '');
+                            $("#tittle").append(str);
+                        }
+                    }
+                }
+
+                //加载二级菜单
+                function loadNextPower(prevId, data, urls) {
+                    str = '';
+                    for (var i = 0; i < data.length; i++) {
+                        if (data[i].pprev_authority == prevId) {
+                            str += '<dd><a href="' + data[i].paction + '" target="management">' + data[i].pname + '</a></dd>'
+                            urls.push(data[i].paction);
+                        }
+                    }
+                    return str;
+                }
+            </script>
+            <!-- 内容主体区域 -->
+            <iframe style="width:100%;height:99.23%" name="management"></iframe>
+            <iframe></iframe>
         </div>
 
         <div class="layui-footer">
@@ -47,53 +115,12 @@
         //JavaScript代码区域
         layui.use('element', function () {
             var element = layui.element;
-
         });
     </script>
 </body>
 </html>
 <script src="~/js/jquery-3.3.1.js"></script>
 
-<script>
-    function load() {
-        $.ajax({
-            url: 'http://localhost:5000/api/Staff/getRolesPowers?staffId=1',
-            type: 'get',
-            dataType: 'json',
-            contentType: 'application/json',
-            success: function (data) {
-                loadPower(data);
-                layui.use('element', function () {
-                    var element = layui.element;
-                    element.init();
-                });
-            }
-        })
-    }
-    function loadPower(data) {
-        for (var i = 0; i < data.length; i++) {
-            if (data[i].pprev_authority == 0) {
-                var str = '';
-                str +=   ' <li class="layui-nav-item layui-nav-itemed">'
-                str +=   ' <a class="" href="javascript:;">' + data[i].pname + '</a>'
-                str +=   ' <dl class="layui-nav-child">'
-                str +=   loadNextPower(data[i].pid, data)
-                str +=   ' </dl>'
-                str +=   ' </li>'
-                str.replace('<dl class="layui-nav-child"></dl>', '');
-                $("#tittle").append(str);
-            }
-        }
-    }
 
-    //加载二级菜单
-    function loadNextPower(prevId, data) {
-        str = '';
-        for (var i = 0; i < data.length; i++) {
-            if (data[i].pprev_authority == prevId) {
-                str += '<dd><a href="' + data[i].paction + '" target="management">' + data[i].pname + '</a></dd>'
-            }
-        }
-        return str;
-    }
-</script>
+
+

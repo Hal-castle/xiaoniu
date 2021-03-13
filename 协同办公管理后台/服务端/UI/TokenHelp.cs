@@ -20,13 +20,13 @@ namespace UI
     {
         public object Configuration { get; private set; }
 
-        public string GetToken(Users user)
+        public string GetToken(string Name,string Pass)
         {
             // push the user’s name into a claim, so we can identify the user later on.
             var claims = new[]
             {
-                   new Claim("Name", user.Name),
-                   new Claim("Pass",user.Pass)
+                   new Claim("Name", Name),
+                   new Claim("Pass",Pass)
             };
             //sign the token using a secret key.This secret will be shared between your API and anything that needs to check that the token is legit.
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("dd%88*377f6d&f£$$£$FdddFF33fssDG^!3")); // 获取密钥

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\liuwanting\\Desktop\\呵呵\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj": {}
+    "C:\\Users\\liuwanting\\Desktop\\ds\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj": {}
   },
   "projects": {
-    "C:\\Users\\liuwanting\\Desktop\\呵呵\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj": {
+    "C:\\Users\\liuwanting\\Desktop\\ds\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\liuwanting\\Desktop\\呵呵\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\liuwanting\\Desktop\\ds\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\liuwanting\\Desktop\\呵呵\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj",
+        "projectPath": "C:\\Users\\liuwanting\\Desktop\\ds\\xiaoniu\\协同办公管理后台\\服务端\\Model\\Model.csproj",
         "packagesPath": "C:\\Users\\liuwanting\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\liuwanting\\Desktop\\呵呵\\xiaoniu\\协同办公管理后台\\服务端\\Model\\obj\\",
+        "outputPath": "C:\\Users\\liuwanting\\Desktop\\ds\\xiaoniu\\协同办公管理后台\\服务端\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\liuwanting\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ya5REj71w3xn5yGHG8QJN9zrB8kpd0Ue5p4xOWSLH0TRTsLtGV9UNN38Hy2u7HLT/dhl/gxrKnpBD+EoxXVlLA==",
+  "dgSpecHash": "kMVyzH/F2ZzgneXpudVzje0aInWEmLIBURooYjXRc+QwIhK7leoX4w5nL273Fc3bOMl6GsMtZIQO1ZSkEEqIYA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\liuwanting\\Desktop\\呵呵\\xiaoniu\\协同办公管理后台\\客户端\\UI\\UI.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\liuwanting\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\liuwanting\\Desktop\\客户端\\UI\\UI.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
